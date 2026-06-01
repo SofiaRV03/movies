@@ -12,7 +12,7 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [showTitle, setShowTitle] = useState(false);
-  const [cursorDone, setCursorDone] = useState(false);
+
   const indicatorRef = useRef<HTMLDivElement>(null);
   const loginTabRef = useRef<HTMLButtonElement>(null);
   const registerTabRef = useRef<HTMLButtonElement>(null);
@@ -22,12 +22,6 @@ export default function LoginPage() {
     const timer = setTimeout(() => setShowTitle(true), 600);
     return () => clearTimeout(timer);
   }, []);
-
-  useEffect(() => {
-    if (!showTitle) return;
-    const timer = setTimeout(() => setCursorDone(true), 2200);
-    return () => clearTimeout(timer);
-  }, [showTitle]);
 
   useEffect(() => {
     if (!indicatorRef.current) return;
@@ -127,11 +121,11 @@ export default function LoginPage() {
               transform: mounted ? "translateY(0)" : "translateY(20px)",
               opacity: mounted ? 1 : 0,
               transition: "opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s",
+              animation: showTitle ? "glow-pulse 3s ease-in-out infinite" : "none",
             }}
           >
             <h1
               style={{
-                color: "var(--gold)",
                 fontFamily: "var(--font-display)",
                 fontSize: "clamp(3rem, 5.5vw, 4.5rem)",
                 letterSpacing: "0.2em",
@@ -139,15 +133,13 @@ export default function LoginPage() {
                 fontWeight: 700,
                 margin: 0,
                 lineHeight: 1,
-                textShadow: "0 2px 30px rgba(0,0,0,0.5)",
-                overflow: "hidden",
-                whiteSpace: "nowrap",
-                borderRight: cursorDone ? "none" : "3px solid var(--gold)",
-                maxWidth: cursorDone ? "20rem" : "0",
-                transition: cursorDone ? "none" : "none",
-                animation: showTitle && !cursorDone
-                  ? "typewriter 1.2s steps(5) 0.1s forwards, blink 0.6s step-end 3"
-                  : "none",
+                background: "linear-gradient(90deg, #c9a84c 0%, #c9a84c 40%, #e8d48b 46%, #fff8dc 48%, #fff8dc 52%, #e8d48b 54%, #c9a84c 60%, #c9a84c 100%)",
+                backgroundSize: "200% auto",
+                backgroundClip: "text",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                color: "transparent",
+                animation: showTitle ? "shimmer 6s ease-in-out infinite" : "none",
               }}
             >
               MOVIX
@@ -374,13 +366,19 @@ export default function LoginPage() {
           .hero-brand { display: block !important; }
           .hero-brand-mobile { display: none !important; }
         }
-        @keyframes typewriter {
-          from { max-width: 0; }
-          to { max-width: 20rem; }
+        @keyframes shimmer {
+          0% { background-position: 100% center; }
+          100% { background-position: 0% center; }
         }
-        @keyframes blink {
-          0%, 100% { border-color: var(--gold); }
-          50% { border-color: transparent; }
+        @keyframes glow-pulse {
+          0% { filter: drop-shadow(0 0 4px rgba(201,168,76,0.08)) drop-shadow(0 0 12px rgba(201,168,76,0.04)); }
+          15% { filter: drop-shadow(0 0 8px rgba(201,168,76,0.2)) drop-shadow(0 0 22px rgba(201,168,76,0.1)); }
+          30% { filter: drop-shadow(0 0 14px rgba(201,168,76,0.4)) drop-shadow(0 0 35px rgba(201,168,76,0.18)); }
+          45% { filter: drop-shadow(0 0 18px rgba(201,168,76,0.55)) drop-shadow(0 0 45px rgba(201,168,76,0.25)); }
+          55% { filter: drop-shadow(0 0 18px rgba(201,168,76,0.55)) drop-shadow(0 0 45px rgba(201,168,76,0.25)); }
+          70% { filter: drop-shadow(0 0 14px rgba(201,168,76,0.4)) drop-shadow(0 0 35px rgba(201,168,76,0.18)); }
+          85% { filter: drop-shadow(0 0 8px rgba(201,168,76,0.2)) drop-shadow(0 0 22px rgba(201,168,76,0.1)); }
+          100% { filter: drop-shadow(0 0 4px rgba(201,168,76,0.08)) drop-shadow(0 0 12px rgba(201,168,76,0.04)); }
         }
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(12px); }
