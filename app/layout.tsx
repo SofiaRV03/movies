@@ -3,6 +3,7 @@ import { Playfair_Display, Source_Serif_4 } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ThemeProvider from "./components/ThemeProvider";
+import AuthProvider from "./contexts/AuthContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import BootstrapClient from "./components/BootstrapClient";
@@ -47,10 +48,12 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeProvider>
-          <BootstrapClient />
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
+          <AuthProvider>
+            <BootstrapClient />
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>

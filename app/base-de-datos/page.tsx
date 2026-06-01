@@ -1,4 +1,13 @@
-export default function BaseDeDatos() {
+import { getSession } from "@/lib/auth";
+import { redirect } from "next/navigation";
+
+export default async function BaseDeDatos() {
+  const session = await getSession();
+
+  if (!session || session.role !== "ADMIN") {
+    redirect("/");
+  }
+
   return (
     <>
       <span id="top" />
