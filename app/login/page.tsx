@@ -4,24 +4,30 @@ import { useState, FormEvent, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/app/contexts/AuthContext";
 
-const SPOTLIGHT_SIZE = 600;
-
 export default function LoginPage() {
   const router = useRouter();
   const { refresh } = useAuth();
   const [tab, setTab] = useState<"login" | "register">("login");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const [mousePos, setMousePos] = useState({ x: 50, y: 50 });
   const [mounted, setMounted] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const [showTitle, setShowTitle] = useState(false);
+  const [cursorDone, setCursorDone] = useState(false);
   const indicatorRef = useRef<HTMLDivElement>(null);
   const loginTabRef = useRef<HTMLButtonElement>(null);
   const registerTabRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     setMounted(true);
+    const timer = setTimeout(() => setShowTitle(true), 600);
+    return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    if (!showTitle) return;
+    const timer = setTimeout(() => setCursorDone(true), 2200);
+    return () => clearTimeout(timer);
+  }, [showTitle]);
 
   useEffect(() => {
     if (!indicatorRef.current) return;
@@ -32,429 +38,353 @@ export default function LoginPage() {
     }
   }, [tab, mounted]);
 
-  const handleMouse = (e: React.MouseEvent) => {
-    if (!containerRef.current) return;
-    const rect = containerRef.current.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-    setMousePos({ x, y });
-  };
-
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError("");
     setLoading(true);
-
     const form = new FormData(e.currentTarget);
     const data: Record<string, string> = {};
     form.forEach((v, k) => { data[k] = v as string; });
-
     const endpoint = tab === "login" ? "/api/auth/login" : "/api/auth/register";
-
     try {
       const res = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-
       const json = await res.json();
-
-      if (!res.ok) {
-        setError(json.error || "Error inesperado");
-        return;
-      }
-
+      if (!res.ok) { setError(json.error || "Error inesperado"); return; }
       await refresh();
       router.push("/");
-    } catch {
-      setError("Error de conexión");
-    } finally {
-      setLoading(false);
-    }
+    } catch { setError("Error de conexión"); }
+    finally { setLoading(false); }
   };
 
   return (
     <div
-      ref={containerRef}
-      onMouseMove={handleMouse}
       style={{
         position: "relative",
         display: "flex",
-        justifyContent: "center",
         alignItems: "center",
-        minHeight: "calc(100vh - var(--nav-height))",
+        justifyContent: "center",
+        minHeight: "100vh",
         padding: "2rem",
         overflow: "hidden",
         background: "var(--bg)",
       }}
     >
-      {/* Spotlight follow cursor */}
-      <div
-        style={{
-          position: "absolute",
-          width: SPOTLIGHT_SIZE,
-          height: SPOTLIGHT_SIZE,
-          borderRadius: "50%",
-          background:
-            "radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 70%)",
-          left: `calc(${mousePos.x}% - ${SPOTLIGHT_SIZE / 2}px)`,
-          top: `calc(${mousePos.y}% - ${SPOTLIGHT_SIZE / 2}px)`,
-          pointerEvents: "none",
-          transition: "left 0.4s ease-out, top 0.4s ease-out",
-        }}
-      />
-
-      {/* Subtle radial glow bottom-right */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: "-20%",
-          right: "-10%",
-          width: "50%",
-          height: "60%",
-          background:
-            "radial-gradient(ellipse, rgba(201,168,76,0.05) 0%, transparent 70%)",
-          pointerEvents: "none",
-        }}
-      />
-
-      {/* Film grain overlay */}
+      {/* Background */}
       <div
         style={{
           position: "absolute",
           inset: 0,
-          opacity: 0.035,
-          backgroundImage:
-            "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\")",
-          backgroundRepeat: "repeat",
-          backgroundSize: "256px 256px",
+          background: `
+            radial-gradient(ellipse 70% 45% at 50% 35%, rgba(201,168,76,0.04) 0%, transparent 60%),
+            linear-gradient(180deg, #0a0a0a 0%, #0d0d0d 50%, #0a0a0a 100%)
+          `,
+          pointerEvents: "none",
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: "radial-gradient(ellipse at center, transparent 25%, rgba(0,0,0,0.65) 100%)",
           pointerEvents: "none",
         }}
       />
 
-      {/* Card */}
+      {/* Content: two columns */}
       <div
         style={{
           position: "relative",
+          zIndex: 1,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "5rem",
           width: "100%",
-          maxWidth: 420,
+          maxWidth: 1100,
           opacity: mounted ? 1 : 0,
-          transform: mounted ? "translateY(0)" : "translateY(24px)",
-          transition: "opacity 0.7s ease, transform 0.7s ease",
+          transition: "opacity 0.8s ease",
         }}
       >
-        {/* Decorative top line */}
+        {/* Left: Brand + Text */}
         <div
           style={{
-            width: "60px",
-            height: "3px",
-            background: "linear-gradient(90deg, var(--gold), transparent)",
-            marginBottom: "1.5rem",
-            borderRadius: "2px",
-            opacity: mounted ? 1 : 0,
-            transition: "opacity 0.6s ease 0.15s",
+            display: "none",
+            flex: "0 0 480px",
+            maxWidth: 480,
           }}
-        />
-
-        {/* Brand */}
-        <div
-          style={{
-            marginBottom: "2.5rem",
-            opacity: mounted ? 1 : 0,
-            transform: mounted ? "translateY(0)" : "translateY(12px)",
-            transition: "opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s",
-          }}
+          className="hero-brand"
         >
-          <h1
-            style={{
-              color: "var(--gold)",
-              fontFamily: "var(--font-display)",
-              fontSize: "2.2rem",
-              letterSpacing: "0.18em",
-              textTransform: "uppercase",
-              margin: 0,
-              fontWeight: 700,
-            }}
-          >
-            MOVIX
-          </h1>
-          <p
-            style={{
-              color: "var(--text-muted)",
-              fontFamily: "var(--font-display)",
-              fontSize: "0.82rem",
-              fontStyle: "italic",
-              letterSpacing: "0.08em",
-              margin: "0.3rem 0 0 0",
-            }}
-          >
-            Gestión Cinematográfica
-          </p>
-        </div>
-
-        {/* Form card */}
-        <div
-          style={{
-            background: "rgba(22, 22, 22, 0.8)",
-            backdropFilter: "blur(20px)",
-            WebkitBackdropFilter: "blur(20px)",
-            border: "1px solid rgba(201, 168, 76, 0.15)",
-            borderRadius: "16px",
-            padding: "2.2rem 2rem",
-            boxShadow:
-              "0 0 0 1px rgba(201,168,76,0.05), 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(201,168,76,0.03)",
-            opacity: mounted ? 1 : 0,
-            transform: mounted ? "translateY(0)" : "translateY(16px)",
-            transition: "opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s",
-          }}
-        >
-          {/* Tab switcher */}
+          {/* MOVIX */}
           <div
             style={{
-              position: "relative",
+              height: "5.5rem",
               display: "flex",
-              marginBottom: "2rem",
-              background: "var(--surface-2)",
-              borderRadius: "10px",
-              padding: "3px",
+              alignItems: "center",
+              transform: mounted ? "translateY(0)" : "translateY(20px)",
+              opacity: mounted ? 1 : 0,
+              transition: "opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s",
             }}
           >
-            <div
-              ref={indicatorRef}
+            <h1
               style={{
-                position: "absolute",
-                top: 3,
-                left: 0,
-                height: "calc(100% - 6px)",
-                background: "rgba(201, 168, 76, 0.12)",
-                border: "1px solid rgba(201, 168, 76, 0.25)",
-                borderRadius: "8px",
-                transition: "transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), width 0.35s cubic-bezier(0.34, 1.56, 0.64, 1)",
-                zIndex: 0,
-              }}
-            />
-            <button
-              ref={loginTabRef}
-              type="button"
-              onClick={() => { setTab("login"); setError(""); }}
-              style={{
-                flex: 1,
-                position: "relative",
-                zIndex: 1,
-                padding: "0.7rem 0",
-                background: "none",
-                border: "none",
-                borderRadius: "7px",
-                color: tab === "login" ? "var(--gold)" : "var(--text-muted)",
+                color: "var(--gold)",
                 fontFamily: "var(--font-display)",
-                fontSize: "0.88rem",
-                cursor: "pointer",
-                letterSpacing: "0.08em",
+                fontSize: "clamp(3rem, 5.5vw, 4.5rem)",
+                letterSpacing: "0.2em",
                 textTransform: "uppercase",
-                transition: "color 0.3s ease",
+                fontWeight: 700,
+                margin: 0,
+                lineHeight: 1,
+                textShadow: "0 2px 30px rgba(0,0,0,0.5)",
+                overflow: "hidden",
+                whiteSpace: "nowrap",
+                borderRight: cursorDone ? "none" : "3px solid var(--gold)",
+                maxWidth: showTitle ? "20rem" : "0",
+                transition: cursorDone ? "none" : "none",
+                animation: showTitle && !cursorDone
+                  ? "typewriter 1.2s steps(5) 0.1s forwards, blink 0.6s step-end 3"
+                  : "none",
               }}
             >
-              Iniciar Sesión
-            </button>
-            <button
-              ref={registerTabRef}
-              type="button"
-              onClick={() => { setTab("register"); setError(""); }}
-              style={{
-                flex: 1,
-                position: "relative",
-                zIndex: 1,
-                padding: "0.7rem 0",
-                background: "none",
-                border: "none",
-                borderRadius: "7px",
-                color: tab === "register" ? "var(--gold)" : "var(--text-muted)",
-                fontFamily: "var(--font-display)",
-                fontSize: "0.88rem",
-                cursor: "pointer",
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                transition: "color 0.3s ease",
-              }}
-            >
-              Registrarse
-            </button>
+              MOVIX
+            </h1>
           </div>
 
-          <form onSubmit={handleSubmit}>
-            <div
+          {/* Tagline */}
+          <div
+            style={{
+              marginTop: "0.3rem",
+              transform: showTitle ? "translateY(0)" : "translateY(20px)",
+              opacity: showTitle ? 1 : 0,
+              transition: "opacity 0.7s ease 0.3s, transform 0.7s ease 0.3s",
+            }}
+          >
+            <h2
               style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "1.2rem",
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(2rem, 4vw, 3.2rem)",
+                fontWeight: 700,
+                color: "var(--cream)",
+                lineHeight: 1.15,
+                margin: 0,
               }}
             >
-              {tab === "register" && (
-                <div
-                  style={{
-                    animation: mounted ? "fadeInUp 0.35s ease" : "none",
-                  }}
-                >
-                  <InputField
-                    id="name"
-                    name="name"
-                    type="text"
-                    label="Nombre"
-                    icon="bi-person"
-                    placeholder="Tu nombre completo"
-                    required
-                  />
-                </div>
-              )}
-
-              <InputField
-                id="email"
-                name="email"
-                type="email"
-                label="Correo Electrónico"
-                icon="bi-envelope"
-                placeholder="correo@ejemplo.com"
-                required
-              />
-
-              <InputField
-                id="password"
-                name="password"
-                type="password"
-                label="Contraseña"
-                icon="bi-lock"
-                placeholder={tab === "register" ? "Mínimo 6 caracteres" : "Tu contraseña"}
-                required
-                minLength={6}
-              />
-
-              {error && (
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "0.5rem",
-                    padding: "0.65rem 0.9rem",
-                    background: "rgba(231, 76, 60, 0.08)",
-                    border: "1px solid rgba(231, 76, 60, 0.2)",
-                    borderRadius: "8px",
-                    color: "#e8736a",
-                    fontSize: "0.82rem",
-                    fontFamily: "var(--font-body)",
-                    animation: "shake 0.4s ease",
-                  }}
-                >
-                  <i
-                    className="bi bi-exclamation-triangle-fill"
-                    style={{ fontSize: "0.9rem", flexShrink: 0 }}
-                  />
-                  <span>{error}</span>
-                </div>
-              )}
-
-              <button
-                type="submit"
-                disabled={loading}
+              Gestiona tu mundo
+              <br />
+              <span
                 style={{
-                  position: "relative",
-                  width: "100%",
-                  marginTop: "0.3rem",
-                  padding: "0.8rem 1.6rem",
-                  background: loading
-                    ? "rgba(201, 168, 76, 0.15)"
-                    : "transparent",
-                  border: "1px solid var(--gold-dim)",
-                  borderRadius: "10px",
-                  color: loading ? "var(--text-muted)" : "var(--gold)",
-                  cursor: loading ? "not-allowed" : "pointer",
-                  fontFamily: "var(--font-display)",
-                  fontSize: "0.88rem",
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                  transition:
-                    "background 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.15s ease",
-                  overflow: "hidden",
-                }}
-                onMouseEnter={(e) => {
-                  if (!loading) {
-                    e.currentTarget.style.background = "var(--gold)";
-                    e.currentTarget.style.color = "var(--bg)";
-                    e.currentTarget.style.borderColor = "var(--gold)";
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (!loading) {
-                    e.currentTarget.style.background = "transparent";
-                    e.currentTarget.style.color = "var(--gold)";
-                    e.currentTarget.style.borderColor = "var(--gold-dim)";
-                  }
-                }}
-                onMouseDown={(e) => {
-                  if (!loading) {
-                    e.currentTarget.style.transform = "scale(0.97)";
-                  }
-                }}
-                onMouseUp={(e) => {
-                  if (!loading) {
-                    e.currentTarget.style.transform = "scale(1)";
-                  }
+                  color: "var(--gold)",
+                  textShadow: "0 0 50px rgba(201,168,76,0.1)",
                 }}
               >
-                {loading ? (
-                  <span style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "0.6rem" }}>
-                    <span
-                      style={{
-                        width: 14,
-                        height: 14,
-                        border: "2px solid var(--text-muted)",
-                        borderTopColor: "var(--gold)",
-                        borderRadius: "50%",
-                        animation: "spin 0.7s linear infinite",
-                        display: "inline-block",
-                      }}
-                    />
-                    Procesando…
-                  </span>
-                ) : tab === "login" ? (
-                  <>
-                    <i className="bi bi-box-arrow-in-right me-2" />
-                    Iniciar Sesión
-                  </>
-                ) : (
-                  <>
-                    <i className="bi bi-person-plus me-2" />
-                    Crear Cuenta
-                  </>
-                )}
-              </button>
-            </div>
-          </form>
+                cinematográfico
+              </span>
+            </h2>
+          </div>
+
+          {/* Description */}
+          <div
+            style={{
+              marginTop: "1.2rem",
+              transform: showTitle ? "translateY(0)" : "translateY(20px)",
+              opacity: showTitle ? 1 : 0,
+              transition: "opacity 0.7s ease 0.45s, transform 0.7s ease 0.45s",
+            }}
+          >
+            <p
+              style={{
+                color: "var(--text-muted)",
+                fontSize: "clamp(1rem, 1.8vw, 1.2rem)",
+                fontFamily: "var(--font-body)",
+                lineHeight: 1.7,
+                margin: 0,
+                maxWidth: 420,
+              }}
+            >
+              Explora, registra y administra películas, actores, directores y géneros. Todo tu catálogo en un solo lugar.
+            </p>
+          </div>
         </div>
 
-        {/* Footer note */}
-        <p
+        {/* Right: Auth Card */}
+        <div
           style={{
-            marginTop: "1.5rem",
-            color: "var(--text-muted)",
-            fontSize: "0.75rem",
-            textAlign: "center",
-            fontFamily: "var(--font-display)",
-            letterSpacing: "0.04em",
-            opacity: mounted ? 1 : 0,
-            transition: "opacity 0.6s ease 0.5s",
+            width: "100%",
+            maxWidth: 460,
+            transform: showTitle ? "translateY(0)" : "translateY(20px)",
+            opacity: showTitle ? 1 : 0,
+            transition: "opacity 0.7s ease 0.55s, transform 0.7s ease 0.55s",
           }}
         >
-          <i className="bi bi-shield-check me-1" />
-          Tus datos están protegidos
-        </p>
+          <div
+            style={{
+              background: "rgba(13,13,13,0.75)",
+              backdropFilter: "blur(24px)",
+              WebkitBackdropFilter: "blur(24px)",
+              border: "1px solid rgba(201,168,76,0.08)",
+              borderRadius: "20px",
+              padding: "clamp(2rem, 3vw, 3rem) clamp(1.8rem, 3vw, 2.8rem)",
+              boxShadow: "0 20px 80px rgba(0,0,0,0.5)",
+            }}
+          >
+            {/* Mobile brand */}
+            <div className="hero-brand-mobile">
+              <h1
+                style={{
+                  color: "var(--gold)",
+                  fontFamily: "var(--font-display)",
+                  fontSize: "1.8rem",
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  fontWeight: 700,
+                  margin: 0,
+                  textAlign: "center",
+                }}
+              >
+                MOVIX
+              </h1>
+              <h2
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "1.3rem",
+                  fontWeight: 600,
+                  color: "var(--cream)",
+                  margin: "0.8rem 0 0 0",
+                  textAlign: "center",
+                  lineHeight: 1.3,
+                }}
+              >
+                Gestiona tu mundo <br />
+                <span style={{ color: "var(--gold)" }}>cinematográfico</span>
+              </h2>
+            </div>
+
+            {/* Tabs */}
+            <div
+              style={{
+                position: "relative",
+                display: "flex",
+                marginTop: "2rem",
+                background: "rgba(255,255,255,0.03)",
+                borderRadius: "12px",
+                padding: "4px",
+              }}
+            >
+              <div
+                ref={indicatorRef}
+                style={{
+                  position: "absolute",
+                  top: 4,
+                  left: 0,
+                  height: "calc(100% - 8px)",
+                  background: "rgba(201,168,76,0.08)",
+                  border: "1px solid rgba(201,168,76,0.15)",
+                  borderRadius: "10px",
+                  transition: "transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)",
+                  zIndex: 0,
+                }}
+              />
+              <button ref={loginTabRef} type="button" onClick={() => { setTab("login"); setError(""); }}
+                style={{
+                  flex: 1, position: "relative", zIndex: 1, padding: "0.9rem 0",
+                  background: "none", border: "none", borderRadius: "9px",
+                  color: tab === "login" ? "var(--gold)" : "var(--text-muted)",
+                  fontFamily: "var(--font-display)", fontSize: "1rem", cursor: "pointer",
+                  letterSpacing: "0.08em", textTransform: "uppercase",
+                  fontWeight: tab === "login" ? 600 : 400, transition: "color 0.3s ease",
+                }}
+              >Iniciar Sesión</button>
+              <button ref={registerTabRef} type="button" onClick={() => { setTab("register"); setError(""); }}
+                style={{
+                  flex: 1, position: "relative", zIndex: 1, padding: "0.9rem 0",
+                  background: "none", border: "none", borderRadius: "9px",
+                  color: tab === "register" ? "var(--gold)" : "var(--text-muted)",
+                  fontFamily: "var(--font-display)", fontSize: "1rem", cursor: "pointer",
+                  letterSpacing: "0.08em", textTransform: "uppercase",
+                  fontWeight: tab === "register" ? 600 : 400, transition: "color 0.3s ease",
+                }}
+              >Registrarse</button>
+            </div>
+
+            {/* Form */}
+            <form onSubmit={handleSubmit}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "1.4rem", marginTop: "2rem" }}>
+                {tab === "register" && (
+                  <div style={{ animation: "fadeInUp 0.35s ease" }}>
+                    <InputField id="name" name="name" type="text" label="Nombre" icon="bi-person" placeholder="Tu nombre completo" required />
+                  </div>
+                )}
+                <InputField id="email" name="email" type="email" label="Correo Electrónico" icon="bi-envelope" placeholder="correo@ejemplo.com" required />
+                <InputField id="password" name="password" type="password" label="Contraseña" icon="bi-lock" placeholder={tab === "register" ? "Mínimo 6 caracteres" : "Tu contraseña"} required minLength={6} />
+
+                {error && (
+                  <div style={{
+                    display: "flex", alignItems: "center", gap: "0.6rem", padding: "0.8rem 1rem",
+                    background: "rgba(231,76,60,0.06)", border: "1px solid rgba(231,76,60,0.15)",
+                    borderRadius: "10px", color: "#e8736a", fontSize: "0.88rem",
+                    fontFamily: "var(--font-body)", animation: "shake 0.4s ease",
+                  }}>
+                    <i className="bi bi-exclamation-triangle-fill" style={{ fontSize: "0.95rem", flexShrink: 0 }} />
+                    <span>{error}</span>
+                  </div>
+                )}
+
+                <button type="submit" disabled={loading}
+                  style={{
+                    width: "100%", marginTop: "0.3rem", padding: "1rem",
+                    background: loading ? "rgba(201,168,76,0.1)" : "transparent",
+                    border: "1px solid", borderRadius: "12px",
+                    borderColor: loading ? "rgba(201,168,76,0.15)" : "rgba(201,168,76,0.3)",
+                    color: loading ? "var(--text-muted)" : "var(--gold)",
+                    cursor: loading ? "not-allowed" : "pointer",
+                    fontFamily: "var(--font-display)", fontSize: "1rem", fontWeight: 600,
+                    letterSpacing: "0.1em", textTransform: "uppercase",
+                    transition: "all 0.3s ease, transform 0.15s ease",
+                  }}
+                  onMouseEnter={(e) => { if (!loading) { e.currentTarget.style.background = "var(--gold)"; e.currentTarget.style.color = "var(--bg)"; e.currentTarget.style.borderColor = "var(--gold)"; e.currentTarget.style.boxShadow = "0 0 40px rgba(201,168,76,0.2)"; } }}
+                  onMouseLeave={(e) => { if (!loading) { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "var(--gold)"; e.currentTarget.style.borderColor = "rgba(201,168,76,0.3)"; e.currentTarget.style.boxShadow = "none"; } }}
+                  onMouseDown={(e) => { if (!loading) e.currentTarget.style.transform = "scale(0.97)"; }}
+                  onMouseUp={(e) => { if (!loading) e.currentTarget.style.transform = "scale(1)"; }}
+                >
+                  {loading ? (
+                    <span style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "0.6rem" }}>
+                      <span style={{ width: 18, height: 18, border: "2px solid var(--text-muted)", borderTopColor: "var(--gold)", borderRadius: "50%", animation: "spin 0.7s linear infinite", display: "inline-block" }} />
+                      Procesando…
+                    </span>
+                  ) : tab === "login" ? (
+                    <><i className="bi bi-box-arrow-in-right me-2" />Iniciar Sesión</>
+                  ) : (
+                    <><i className="bi bi-person-plus me-2" />Crear Cuenta</>
+                  )}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
 
-      {/* Keyframes injected once */}
+      {/* Keyframes */}
       {mounted && (
         <style>{`
+          body { padding-top: 0 !important; }
+          @media (min-width: 960px) {
+            .hero-brand { display: block !important; }
+            .hero-brand-mobile { display: none !important; }
+          }
+          @keyframes typewriter {
+            from { max-width: 0; }
+            to { max-width: 20rem; }
+          }
+          @keyframes blink {
+            0%, 100% { border-color: var(--gold); }
+            50% { border-color: transparent; }
+          }
           @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(10px); }
+            from { opacity: 0; transform: translateY(12px); }
             to { opacity: 1; transform: translateY(0); }
           }
           @keyframes shake {
@@ -464,107 +394,50 @@ export default function LoginPage() {
             60% { transform: translateX(-4px); }
             80% { transform: translateX(4px); }
           }
-          @keyframes spin {
-            to { transform: rotate(360deg); }
-          }
+          @keyframes spin { to { transform: rotate(360deg); } }
         `}</style>
       )}
     </div>
   );
 }
 
-function InputField({
-  id,
-  name,
-  type,
-  label,
-  icon,
-  placeholder,
-  required,
-  minLength,
-}: {
-  id: string;
-  name: string;
-  type: string;
-  label: string;
-  icon: string;
-  placeholder: string;
-  required?: boolean;
-  minLength?: number;
+function InputField({ id, name, type, label, icon, placeholder, required, minLength }: {
+  id: string; name: string; type: string; label: string; icon: string;
+  placeholder: string; required?: boolean; minLength?: number;
 }) {
   const [focused, setFocused] = useState(false);
   const [filled, setFilled] = useState(false);
-
   return (
-    <div className="form-group" style={{ gap: "0.4rem" }}>
-      <label
-        htmlFor={id}
-        style={{
-          fontSize: "0.75rem",
+    <div className="form-group" style={{ gap: "0.45rem" }}>
+      <label htmlFor={id} style={{
+        fontSize: "0.82rem", color: focused ? "var(--gold)" : "var(--text-muted)",
+        letterSpacing: "0.08em", textTransform: "uppercase", transition: "color 0.25s ease",
+        fontFamily: "var(--font-display)",
+      }}>{label}</label>
+      <div style={{
+        position: "relative", display: "flex", alignItems: "center",
+        background: "rgba(255,255,255,0.03)", border: "1px solid",
+        borderColor: focused ? "rgba(201,168,76,0.35)" : "rgba(255,255,255,0.06)",
+        borderRadius: "12px", transition: "border-color 0.25s ease, box-shadow 0.25s ease",
+        boxShadow: focused ? "0 0 0 4px rgba(201,168,76,0.05)" : "none",
+      }}>
+        <i className={icon} style={{
+          position: "absolute", left: "1rem",
           color: focused ? "var(--gold)" : "var(--text-muted)",
-          letterSpacing: "0.08em",
-          textTransform: "uppercase",
-          transition: "color 0.25s ease",
-          fontFamily: "var(--font-display)",
-        }}
-      >
-        {label}
-      </label>
-      <div
-        style={{
-          position: "relative",
-          display: "flex",
-          alignItems: "center",
-          background: "var(--surface-2)",
-          border: "1px solid",
-          borderColor: focused
-            ? "var(--gold-dim)"
-            : "var(--border)",
-          borderRadius: "10px",
-          transition:
-            "border-color 0.25s ease, box-shadow 0.25s ease",
-          boxShadow: focused
-            ? "0 0 0 3px rgba(201, 168, 76, 0.08), inset 0 0 0 1px rgba(201, 168, 76, 0.1)"
-            : "none",
-        }}
-      >
-        <i
-          className={icon}
-          style={{
-            position: "absolute",
-            left: "0.9rem",
-            color: focused ? "var(--gold)" : "var(--text-muted)",
-            fontSize: "0.85rem",
-            transition: "color 0.25s ease",
-            pointerEvents: "none",
-            zIndex: 1,
-          }}
-        />
-        <input
-          id={id}
-          name={name}
-          type={type}
-          placeholder={placeholder}
-          required={required}
-          minLength={minLength}
+          fontSize: "0.95rem", transition: "color 0.25s ease",
+          pointerEvents: "none", zIndex: 1,
+        }} />
+        <input id={id} name={name} type={type} placeholder={placeholder}
+          required={required} minLength={minLength}
           onFocus={() => setFocused(true)}
-          onBlur={(e) => {
-            setFocused(false);
-            setFilled(e.target.value.length > 0);
-          }}
+          onBlur={(e) => { setFocused(false); setFilled(e.target.value.length > 0); }}
           onChange={(e) => setFilled(e.target.value.length > 0)}
           style={{
-            width: "100%",
-            padding: "0.75rem 1rem 0.75rem 2.6rem",
-            background: "transparent",
-            border: "none",
-            outline: "none",
+            width: "100%", padding: "1rem 1rem 1rem 2.9rem",
+            background: "transparent", border: "none", outline: "none",
             color: filled ? "var(--cream)" : "var(--text)",
-            fontFamily: "var(--font-body)",
-            fontSize: "0.92rem",
-            borderRadius: "10px",
-          }}
-        />
+            fontFamily: "var(--font-body)", fontSize: "1rem", borderRadius: "12px",
+          }} />
       </div>
     </div>
   );
