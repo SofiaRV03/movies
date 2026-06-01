@@ -143,7 +143,7 @@ export default function LoginPage() {
                 overflow: "hidden",
                 whiteSpace: "nowrap",
                 borderRight: cursorDone ? "none" : "3px solid var(--gold)",
-                maxWidth: showTitle ? "20rem" : "0",
+                maxWidth: cursorDone ? "20rem" : "0",
                 transition: cursorDone ? "none" : "none",
                 animation: showTitle && !cursorDone
                   ? "typewriter 1.2s steps(5) 0.1s forwards, blink 0.6s step-end 3"
@@ -368,35 +368,33 @@ export default function LoginPage() {
       </div>
 
       {/* Keyframes */}
-      {mounted && (
-        <style>{`
-          body { padding-top: 0 !important; }
-          @media (min-width: 960px) {
-            .hero-brand { display: block !important; }
-            .hero-brand-mobile { display: none !important; }
-          }
-          @keyframes typewriter {
-            from { max-width: 0; }
-            to { max-width: 20rem; }
-          }
-          @keyframes blink {
-            0%, 100% { border-color: var(--gold); }
-            50% { border-color: transparent; }
-          }
-          @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(12px); }
-            to { opacity: 1; transform: translateY(0); }
-          }
-          @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            20% { transform: translateX(-6px); }
-            40% { transform: translateX(6px); }
-            60% { transform: translateX(-4px); }
-            80% { transform: translateX(4px); }
-          }
-          @keyframes spin { to { transform: rotate(360deg); } }
-        `}</style>
-      )}
+      <style>{`
+        body { padding-top: 0 !important; }
+        @media (min-width: 960px) {
+          .hero-brand { display: block !important; }
+          .hero-brand-mobile { display: none !important; }
+        }
+        @keyframes typewriter {
+          from { max-width: 0; }
+          to { max-width: 20rem; }
+        }
+        @keyframes blink {
+          0%, 100% { border-color: var(--gold); }
+          50% { border-color: transparent; }
+        }
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(12px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes shake {
+          0%, 100% { transform: translateX(0); }
+          20% { transform: translateX(-6px); }
+          40% { transform: translateX(6px); }
+          60% { transform: translateX(-4px); }
+          80% { transform: translateX(4px); }
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+      `}</style>
     </div>
   );
 }
