@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
+import ScrollAnimation from "@/app/components/ScrollAnimation";
 
 interface Movie {
   id: number;
@@ -80,11 +81,14 @@ export default function GaleriaPage() {
   return (
     <>
       <section className="fade-in-up" style={{ paddingBottom: 0 }}>
+        <span className="section-tag">Catálogo</span>
         <h2>
           <i className="bi bi-film me-2" style={{ color: "var(--gold)" }} />
           Galería de Películas
         </h2>
-        <p>Explora las {pagination?.total ?? "..."} películas en nuestro catálogo.</p>
+        <p className="section-desc" style={{ textAlign: "left", margin: "0.5rem 0 1rem" }}>
+          Explora las {pagination?.total ?? "..."} películas en nuestro catálogo.
+        </p>
 
         <form onSubmit={handleSearch} style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap", margin: "1.5rem 0" }}>
           <div className="input-icon-wrap" style={{ flex: "1 1 260px", position: "relative" }}>
@@ -151,6 +155,7 @@ export default function GaleriaPage() {
         </form>
       </section>
 
+      <ScrollAnimation>
       <section style={{ paddingTop: "1rem" }}>
         {loading ? (
           <div style={{ textAlign: "center", padding: "3rem 0" }}>
@@ -257,6 +262,7 @@ export default function GaleriaPage() {
           </>
         )}
       </section>
+      </ScrollAnimation>
     </>
   );
 }

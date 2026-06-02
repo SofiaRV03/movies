@@ -17,10 +17,19 @@ export default async function MovieDetailPage({ params }: Props) {
       genres: { include: { genre: true } },
       directors: { include: { person: true } },
       cast: { include: { person: true }, orderBy: { billingOrder: 'asc' } },
+      reviews: {
+        include: { user: { select: { id: true, name: true } } },
+        orderBy: { createdAt: 'desc' },
+      },
     },
   });
 
   if (!movie) notFound();
+
+  const movixRating =
+    movie.reviews.length > 0
+      ? (movie.reviews.reduce((sum, r) => sum + r.rating, 0) / movie.reviews.length).toFixed(1)
+      : null;
 
   const data = {
     id: movie.id,
@@ -28,6 +37,7 @@ export default async function MovieDetailPage({ params }: Props) {
     year: movie.year,
     runtimeMin: movie.runtimeMin,
     imdbRating: movie.imdbRating?.toString() ?? null,
+    movixRating,
     overview: movie.overview,
     posterUrl: movie.posterUrl,
     genres: movie.genres.map((g) => g.genre.name),
@@ -36,6 +46,14 @@ export default async function MovieDetailPage({ params }: Props) {
       name: c.person.name,
       billingOrder: c.billingOrder,
     })),
+    reviews: movie.reviews.map((r) => ({
+      id: r.id,
+      rating: r.rating,
+      comment: r.comment,
+      createdAt: r.createdAt.toISOString(),
+      user: { id: r.user.id, name: r.user.name },
+    })),
+    totalReviews: movie.reviews.length,
   };
 
   return (

@@ -2,223 +2,122 @@ import MovieCarousel from "./components/MovieCarousel";
 import ContactForm from "./components/ContactForm";
 import ScrollAnimation from "./components/ScrollAnimation";
 import Header from "./components/Header";
+import StatsCounter from "./components/StatsCounter";
+import ModuleGrid from "./components/ModuleGrid";
 
 export default function Home() {
   return (
     <>
       <Header />
+
+      <section className="section-divider" aria-hidden="true" />
+
       <MovieCarousel />
 
-      <section aria-labelledby="bienvenida-titulo">
-        <h2 id="bienvenida-titulo">Bienvenido a Movix</h2>
-        <p>
-          Explora y gestiona información sobre películas, actores, directores y
-          géneros cinematográficos.
-        </p>
-        <hr />
-      </section>
+      <ScrollAnimation>
+        <section className="stats-section" aria-label="Estadísticas del sistema">
+          <StatsCounter />
+        </section>
+      </ScrollAnimation>
 
-      <section aria-labelledby="que-es-titulo">
-        <h2 id="que-es-titulo">¿Qué es Movix?</h2>
-        <p>
-          <strong>Movix</strong> es una plataforma para administrar información
-          cinematográfica, permitiendo registrar, consultar y analizar datos de
-          películas, actores, directores y géneros.
-        </p>
+      <ScrollAnimation>
+        <section className="welcome-section" aria-labelledby="bienvenida-titulo">
+          <div className="welcome-content">
+            <span className="section-tag">Plataforma cinematográfica</span>
+            <h2 id="bienvenida-titulo">Explora, Gestiona, Descubre</h2>
+            <p>
+              <strong>Movix</strong> te permite administrar información
+              cinematográfica, registrar películas, consultar actores y directores,
+              y descubrir nuevas obras maestras del séptimo arte.
+            </p>
+            <div className="welcome-features">
+              <div className="welcome-feature">
+                <i className="bi bi-search" />
+                <span>Consulta detallada</span>
+              </div>
+              <div className="welcome-feature">
+                <i className="bi bi-star" />
+                <span>Calificaciones IMDB y Movix</span>
+              </div>
+              <div className="welcome-feature">
+                <i className="bi bi-bookmark" />
+                <span>Watchlist personal</span>
+              </div>
+              <div className="welcome-feature">
+                <i className="bi bi-people" />
+                <span>Comunidad de reseñas</span>
+              </div>
+            </div>
+          </div>
+          <div className="welcome-visual">
+            <div className="welcome-card-glass">
+              <i className="bi bi-film" />
+              <span>+{new Date().getFullYear() - 2014} años de cine en tu pantalla</span>
+            </div>
+          </div>
+        </section>
+      </ScrollAnimation>
 
-        <dl>
-          <dt>
-            <strong>Inicio de operaciones:</strong>
-          </dt>
-          <dd>
-            <time dateTime="2026-03-18">18 de marzo de 2026</time>
-          </dd>
-          <dt>
-            <strong>Recomendado para:</strong>
-          </dt>
-          <dd>
-            <mark>Amantes del cine y la gestión de datos</mark>
-          </dd>
-        </dl>
-        <hr />
-      </section>
+      <section className="section-divider" aria-hidden="true" />
 
-      <section aria-labelledby="modulos-titulo">
-        <h2 id="modulos-titulo">Módulos del Sistema</h2>
+      <ScrollAnimation>
+        <section className="modules-section" aria-labelledby="modulos-titulo">
+          <div className="modules-header">
+            <span className="section-tag">Funcionalidades</span>
+            <h2 id="modulos-titulo">Módulos del Sistema</h2>
+            <p className="section-desc">
+              Todo lo que necesitas para gestionar tu experiencia cinematográfica
+            </p>
+          </div>
+          <ModuleGrid />
+        </section>
+      </ScrollAnimation>
 
-        <details>
-          <summary>
-            <strong>Consulta de Películas</strong>
-          </summary>
-          <p>
-            Permite consultar información detallada sobre películas, incluyendo
-            título, director, actores, género y calificación según IMDB.
-          </p>
-          <p>
-            <strong>Tablas relacionadas:</strong>
-          </p>
-          <ul>
-            <li>
-              <code>tbl_peliculas</code>
-            </li>
-            <li>
-              <code>tbl_actores</code>
-            </li>
-            <li>
-              <code>tbl_directores</code>
-            </li>
-            <li>
-              <code>tbl_generos</code>
-            </li>
-          </ul>
-        </details>
+      <section className="section-divider" aria-hidden="true" />
 
-        <details>
-          <summary>
-            <strong>WatchList</strong>
-          </summary>
-          <p>
-            Permite a los usuarios agregar películas a una lista de seguimiento
-            personalizada.
-          </p>
-          <p>
-            <strong>Tablas relacionadas:</strong>
-          </p>
-          <ul>
-            <li>
-              <code>tbl_watchlist</code>
-            </li>
-          </ul>
-        </details>
+      <ScrollAnimation>
+        <section className="table-section" aria-labelledby="tablas-titulo">
+          <span className="section-tag">Base de datos</span>
+          <h2 id="tablas-titulo">Resumen de Tablas del Sistema</h2>
+          <div className="table-wrap">
+            <table>
+              <caption>
+                Tablas de la base de datos Movix y los módulos que las utilizan
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Tabla</th>
+                  <th scope="col">Módulos que la usan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>tbl_peliculas</code></td>
+                  <td>Consulta, Registrar, Dashboard, Recomendaciones</td>
+                </tr>
+                <tr>
+                  <td><code>tbl_actores</code></td>
+                  <td>Consulta, Registrar, Dashboard, Recomendaciones</td>
+                </tr>
+                <tr>
+                  <td><code>tbl_directores</code></td>
+                  <td>Consulta, Registrar, Dashboard, Recomendaciones</td>
+                </tr>
+                <tr>
+                  <td><code>tbl_generos</code></td>
+                  <td>Consulta, Registrar, Dashboard, Recomendaciones</td>
+                </tr>
+                <tr>
+                  <td><code>tbl_watchlist</code></td>
+                  <td>WatchList</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </ScrollAnimation>
 
-        <details>
-          <summary>
-            <strong>Registrar Película</strong>
-          </summary>
-          <p>
-            Permite al administrador agregar películas al catálogo del sistema.
-          </p>
-          <p>
-            <strong>Tablas relacionadas:</strong>
-          </p>
-          <ul>
-            <li>
-              <code>tbl_peliculas</code>
-            </li>
-            <li>
-              <code>tbl_actores</code>
-            </li>
-            <li>
-              <code>tbl_directores</code>
-            </li>
-            <li>
-              <code>tbl_generos</code>
-            </li>
-          </ul>
-        </details>
-
-        <details>
-          <summary>
-            <strong>Dashboard</strong>
-          </summary>
-          <p>
-            Permite al usuario visualizar estadísticas y métricas sobre el
-            catálogo de películas.
-          </p>
-          <p>
-            <strong>Tablas relacionadas:</strong>
-          </p>
-          <ul>
-            <li>
-              <code>tbl_peliculas</code>
-            </li>
-            <li>
-              <code>tbl_actores</code>
-            </li>
-            <li>
-              <code>tbl_directores</code>
-            </li>
-            <li>
-              <code>tbl_generos</code>
-            </li>
-          </ul>
-        </details>
-
-        <details>
-          <summary>
-            <strong>¿Qué película ver hoy?</strong>
-          </summary>
-          <p>
-            Permite al usuario ver recomendaciones basadas en sus preferencias de
-            género, director y actor.
-          </p>
-          <p>
-            <strong>Tablas relacionadas:</strong>
-          </p>
-          <ul>
-            <li>
-              <code>tbl_peliculas</code>
-            </li>
-            <li>
-              <code>tbl_actores</code>
-            </li>
-            <li>
-              <code>tbl_directores</code>
-            </li>
-            <li>
-              <code>tbl_generos</code>
-            </li>
-          </ul>
-        </details>
-        <hr />
-      </section>
-
-      <section aria-labelledby="tablas-titulo">
-        <h2 id="tablas-titulo">Resumen de Tablas del Sistema</h2>
-        <table>
-          <caption>
-            Tablas de la base de datos Movix y los módulos que las utilizan
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Tabla</th>
-              <th scope="col">Módulos que la usan</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <code>tbl_peliculas</code>
-              </td>
-              <td>Consulta, Registrar, Dashboard, Recomendaciones</td>
-            </tr>
-            <tr>
-              <td>
-                <code>tbl_actores</code>
-              </td>
-              <td>Consulta, Registrar, Dashboard, Recomendaciones</td>
-            </tr>
-            <tr>
-              <td>
-                <code>tbl_directores</code>
-              </td>
-              <td>Consulta, Registrar, Dashboard, Recomendaciones</td>
-            </tr>
-            <tr>
-              <td>
-                <code>tbl_generos</code>
-              </td>
-              <td>Consulta, Registrar, Dashboard, Recomendaciones</td>
-            </tr>
-            <tr>
-              <td>
-                <code>tbl_watchlist</code>
-              </td>
-              <td>WatchList</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      <section className="section-divider" aria-hidden="true" />
 
       <section aria-labelledby="contacto-titulo" className="contacto-section">
         <div className="contacto-bg">
@@ -235,7 +134,6 @@ export default function Home() {
             </ScrollAnimation>
           </div>
         </div>
-        <hr />
       </section>
     </>
   );

@@ -48,7 +48,7 @@ export default function MovieSearch() {
   };
 
   return (
-    <div className="form-card">
+    <div className="form-card" style={{ maxWidth: "100%" }}>
       <div className="form-card-icon-wrap">
         <i className="bi bi-film" />
       </div>
@@ -62,7 +62,7 @@ export default function MovieSearch() {
               type="text"
               id="nombre"
               name="nombre"
-              placeholder="Ej: Interstellar, star wars, Chihiro..."
+              placeholder="Ej: Interstellar, Star Wars, Chihiro..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               required
@@ -75,33 +75,45 @@ export default function MovieSearch() {
         </button>
 
         {result && (
-          <div style={{ marginTop: "1rem" }}>
-            <img
-              src={result.poster_url}
-              alt={result.title}
-              style={{
-                width: "150px",
-                borderRadius: "8px",
-                marginBottom: "10px",
-                boxShadow: "0 5px 15px rgba(0,0,0,0.5)",
-              }}
-            />
-            <p>
-              🎬 <strong>{result.title}</strong>
-              <br />
-              📅 Año: {result.year}
-              <br />
-              ⭐ IMDB: {result.imdb_rating}
-              <br />
-              📝 {result.overview}
-            </p>
+          <div className="search-result">
+            <div className="search-result-poster">
+              <img
+                src={result.poster_url}
+                alt={result.title}
+              />
+            </div>
+            <div className="search-result-info">
+              <h4 className="search-result-title">
+                <i className="bi bi-film me-2" style={{ color: "var(--gold)" }} />
+                {result.title}
+              </h4>
+              <div className="search-result-meta">
+                <span className="movie-detail-badge">
+                  <i className="bi bi-calendar me-1" />
+                  {result.year}
+                </span>
+                <span className="movie-detail-badge" style={{ background: "rgba(245,197,24,0.15)", borderColor: "#f5c518" }}>
+                  <i className="bi bi-star-fill me-1" style={{ color: "#f5c518" }} />
+                  {result.imdb_rating}
+                </span>
+              </div>
+              {result.genres.length > 0 && (
+                <div className="movie-detail-tags" style={{ marginTop: "0.5rem" }}>
+                  {result.genres.slice(0, 3).map((g) => (
+                    <span key={g} className="movie-detail-tag">{g}</span>
+                  ))}
+                </div>
+              )}
+              <p className="search-result-overview">{result.overview}</p>
+            </div>
           </div>
         )}
 
         {notFound && (
-          <p style={{ marginTop: "1rem", color: "var(--gold)" }}>
-            ❌ No encontramos esa película
-          </p>
+          <div className="search-notfound">
+            <i className="bi bi-search me-2" />
+            No encontramos esa película en el catálogo local
+          </div>
         )}
       </form>
     </div>

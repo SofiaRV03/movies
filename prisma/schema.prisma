@@ -29,6 +29,9 @@ model User {
   role      String   @default("USER") @db.VarChar(10)
   createdAt DateTime @default(now()) @map("created_at")
 
+  reviews   Review[]
+  movies    UserMovie[]
+
   @@map("users")
 }
 
@@ -54,10 +57,43 @@ model Movie {
   directors MovieDirector[]
   cast      MovieCast[]
   genres    MovieGenre[]
+  reviews   Review[]
+  userMovies UserMovie[]
 
   @@map("movies")
   @@index([year], map: "idx_year")
   @@index([imdbRating], map: "idx_rating")
+}
+
+model Review {
+  id        Int      @id @default(autoincrement())
+  movieId   Int      @map("movie_id")
+  userId    Int      @map("user_id")
+  rating    Int      @db.SmallInt
+  comment   String   @db.Text
+  createdAt DateTime @default(now()) @map("created_at")
+
+  movie Movie @relation(fields: [movieId], references: [id], onDelete: Cascade)
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("reviews")
+  @@index([movieId], map: "idx_review_movie")
+  @@index([userId], map: "idx_review_user")
+}
+
+model UserMovie {
+  id        Int      @id @default(autoincrement())
+  userId    Int      @map("user_id")
+  movieId   Int      @map("movie_id")
+  listType  String   @map("list_type") @db.VarChar(10)
+  createdAt DateTime @default(now()) @map("created_at")
+
+  movie Movie @relation(fields: [movieId], references: [id], onDelete: Cascade)
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, movieId, listType])
+  @@map("user_movies")
+  @@index([userId, listType], map: "idx_user_movies_list")
 }
 
 model MovieDirector {

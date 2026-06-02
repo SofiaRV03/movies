@@ -3,29 +3,34 @@ import ScrollAnimation from "../components/ScrollAnimation";
 export default function QuienesSomosPage() {
   return (
     <>
-      <section aria-labelledby="tit-quienes" className="fade-in-up">
-        <h2 id="tit-quienes">
-          <i className="bi bi-info-circle me-2" style={{ color: "var(--gold)" }} />
-          ¿Quiénes Somos?
-        </h2>
-        <div className="form-card" style={{ padding: "2rem", maxWidth: "100%" }}>
-          <p>
-            En Movix creemos que encontrar una buena película no debería ser
-            complicado. Somos una plataforma diseñada para ayudarte a descubrir
-            películas que realmente se adapten a tus gustos, utilizando tecnología
-            y recomendaciones personalizadas para ofrecer una mejor experiencia de
-            entretenimiento.
-          </p>
-          <p>
-            Nuestro objetivo es hacer que cada usuario encuentre algo increíble
-            para ver, de forma rápida, sencilla y divertida.
-          </p>
-        </div>
-      </section>
+      <ScrollAnimation>
+        <section aria-labelledby="tit-quienes" className="fade-in-up">
+          <span className="section-tag">Nosotros</span>
+          <h2 id="tit-quienes">
+            <i className="bi bi-info-circle me-2" style={{ color: "var(--gold)" }} />
+            ¿Quiénes Somos?
+          </h2>
+          <div className="about-card">
+            <p>
+              En <strong>Movix</strong> creemos que encontrar una buena película no debería ser
+              complicado. Somos una plataforma diseñada para ayudarte a descubrir
+              películas que realmente se adapten a tus gustos, utilizando tecnología
+              y recomendaciones personalizadas para ofrecer una mejor experiencia de
+              entretenimiento.
+            </p>
+            <p>
+              Nuestro objetivo es hacer que cada usuario encuentre algo increíble
+              para ver, de forma rápida, sencilla y divertida.
+            </p>
+          </div>
+        </section>
+      </ScrollAnimation>
 
-      <section className="row mt-5 fade-in-up">
-        <div className="col-md-6 mb-4">
-          <div className="form-card h-100" style={{ padding: "2rem", maxWidth: "100%" }}>
+      <section className="section-divider" aria-hidden="true" />
+
+      <ScrollAnimation>
+        <div className="about-grid">
+          <div className="about-card">
             <h3>
               <i className="bi bi-bullseye me-2" style={{ color: "var(--gold)" }} />
               Misión
@@ -39,9 +44,7 @@ export default function QuienesSomosPage() {
               ver.
             </p>
           </div>
-        </div>
-        <div className="col-md-6 mb-4">
-          <div className="form-card h-100" style={{ padding: "2rem", maxWidth: "100%" }}>
+          <div className="about-card">
             <h3>
               <i className="bi bi-eye me-2" style={{ color: "var(--gold)" }} />
               Visión
@@ -55,15 +58,18 @@ export default function QuienesSomosPage() {
             </p>
           </div>
         </div>
-      </section>
+      </ScrollAnimation>
+
+      <section className="section-divider" aria-hidden="true" />
 
       <ScrollAnimation>
-        <section aria-labelledby="tit-equipo" className="mt-5 fade-in-up">
+        <section aria-labelledby="tit-equipo">
+          <span className="section-tag">Equipo</span>
           <h2 id="tit-equipo">
             <i className="bi bi-people-fill me-2" style={{ color: "var(--gold)" }} />
             Nuestro Equipo
           </h2>
-          <div className="form-card" style={{ padding: "2rem", maxWidth: "100%" }}>
+          <div className="about-card">
             <p>
               Movix fue desarrollado por{" "}
               <strong>
@@ -96,8 +102,6 @@ export default function QuienesSomosPage() {
           </div>
         </section>
       </ScrollAnimation>
-
-      <hr />
     </>
   );
 }

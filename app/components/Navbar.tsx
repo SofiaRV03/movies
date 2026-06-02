@@ -16,6 +16,11 @@ export default function Navbar() {
     { href: "/galeria", label: "Galería", icon: "bi-film" },
     ...(user?.role === "ADMIN"
       ? [{ href: "/base-de-datos", label: "Base de Datos", icon: "bi-database" }]
+      : user?.role === "USER"
+      ? [
+          { href: "/vistas", label: "Vistas", icon: "bi-eye-fill" },
+          { href: "/watchlist", label: "Watchlist", icon: "bi-bookmark-fill" },
+        ]
       : []),
     { href: "/quienes-somos", label: "Quiénes Somos", icon: "bi-people" },
   ];
