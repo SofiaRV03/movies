@@ -1,4 +1,1 @@
-SELECT COUNT(DISTINCT person_id)
-FROM movie_directors;
-
-
+select * from movies where id=1002

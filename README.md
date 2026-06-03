@@ -149,7 +149,7 @@ Antes de comenzar, asegúrate de tener instalado en tu sistema:
 
 Si el proyecto está en un repositorio Git:
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/SofiaRV03/movies.git
 cd movies
 ```
 
