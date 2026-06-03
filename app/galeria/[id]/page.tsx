@@ -5,9 +5,11 @@ import MovieDetailClient from './MovieDetailClient';
 
 interface Props {
   params: Promise<{ id: string }>;
+  searchParams: Promise<{ page?: string }>;
 }
 
-export default async function MovieDetailPage({ params }: Props) {
+export default async function MovieDetailPage({ params, searchParams }: Props) {
+  const { page } = await searchParams;
   const id = parseInt((await params).id, 10);
   if (isNaN(id)) notFound();
 
@@ -60,7 +62,7 @@ export default async function MovieDetailPage({ params }: Props) {
     <>
       <section className="fade-in-up" style={{ paddingBottom: 0 }}>
         <Link
-          href="/galeria"
+          href={page ? `/galeria?page=${page}` : "/galeria"}
           style={{
             display: "inline-flex",
             alignItems: "center",

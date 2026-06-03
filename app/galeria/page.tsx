@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, Suspense } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import ScrollAnimation from "@/app/components/ScrollAnimation";
 
 interface Movie {
@@ -23,7 +24,9 @@ interface Pagination {
   totalPages: number;
 }
 
-export default function GaleriaPage() {
+function GaleriaPageContent() {
+  const searchParams = useSearchParams();
+  const urlPage = Math.max(1, parseInt(searchParams.get("page") ?? "1", 10) || 1);
   const [movies, setMovies] = useState<Movie[]>([]);
   const [pagination, setPagination] = useState<Pagination | null>(null);
   const [searchInput, setSearchInput] = useState("");
@@ -31,7 +34,7 @@ export default function GaleriaPage() {
   const [genres, setGenres] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchKey, setSearchKey] = useState(0);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(urlPage);
   const prevQuery = useRef("");
   const prevGenre = useRef("");
 
@@ -45,7 +48,7 @@ export default function GaleriaPage() {
   useEffect(() => {
     const params = new URLSearchParams();
     params.set("page", page.toString());
-    params.set("limit", "24");
+    params.set("limit", "48");
     const q = prevQuery.current;
     const g = prevGenre.current;
     if (q) params.set("q", q);
@@ -173,7 +176,7 @@ export default function GaleriaPage() {
               {movies.map((movie) => (
                 <Link
                   key={movie.id}
-                  href={`/galeria/${movie.id}`}
+                  href={`/galeria/${movie.id}?page=${page}`}
                   className="movie-card"
                 >
                   <div className="movie-card-poster">
@@ -229,17 +232,8 @@ export default function GaleriaPage() {
                 >
                   <i className="bi bi-chevron-left" />
                 </button>
-                {Array.from({ length: Math.min(pagination.totalPages, 7) }, (_, i) => {
-                  let pageNum: number;
-                  if (pagination.totalPages <= 7) {
-                    pageNum = i + 1;
-                  } else if (page <= 4) {
-                    pageNum = i + 1;
-                  } else if (page >= pagination.totalPages - 3) {
-                    pageNum = pagination.totalPages - 6 + i;
-                  } else {
-                    pageNum = page - 3 + i;
-                  }
+                {Array.from({ length: pagination.totalPages }, (_, i) => {
+                  const pageNum = i + 1;
                   return (
                     <button
                       key={pageNum}
@@ -264,5 +258,13 @@ export default function GaleriaPage() {
       </section>
       </ScrollAnimation>
     </>
+  );
+}
+
+export default function GaleriaPage() {
+  return (
+    <Suspense fallback={<div style={{ textAlign: "center", padding: "3rem" }}>Cargando...</div>}>
+      <GaleriaPageContent />
+    </Suspense>
   );
 }
