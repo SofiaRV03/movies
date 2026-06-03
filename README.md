@@ -4,7 +4,7 @@ Una plataforma moderna y elegante para la gestión, consulta y descubrimiento de
 
 ---
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 1. [Descripción del Proyecto](#-descripción-del-proyecto)
 2. [Tecnologías Utilizadas](#-tecnologías-utilizadas)
@@ -19,7 +19,7 @@ Una plataforma moderna y elegante para la gestión, consulta y descubrimiento de
 
 ---
 
-## 🎬 Descripción del Proyecto
+## Descripción del Proyecto
 
 **MOVIX** es un sistema de gestión cinematográfica que permite a los usuarios explorar, consultar y gestionar información sobre películas, actores, directores y géneros. El proyecto incluye funcionalidades de autenticación, roles de usuario (ADMIN y USER), listas personalizadas (Vistas y Watchlist), y un sistema de reseñas.
 
@@ -27,7 +27,7 @@ La interfaz cuenta con un diseño elegante y moderno, con soporte para modo oscu
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 | Categoría | Tecnologías |
 |-----------|-------------|
@@ -40,53 +40,53 @@ La interfaz cuenta con un diseño elegante y moderno, con soporte para modo oscu
 
 ---
 
-## ✨ Características Principales
+## Características Principales
 
-- 🎥 **Galería de Películas**: Navega por el catálogo completo con filtros de búsqueda y géneros
-- 🔐 **Autenticación Segura**: Sistema de inicio de sesión y registro de usuarios
-- 👥 **Roles de Usuario**: Control de acceso diferenciado entre ADMIN y USER
-- 📝 **Reseñas y Calificaciones**: Los usuarios pueden dejar reseñas y calificar películas
-- 📚 **Listas Personalizadas**: "Vistas" (películas vistas) y "Watchlist" (para ver después)
-- 🎨 **Modo Oscuro/Claro**: Interfaz adaptable con tema personalizable
-- 📱 **Responsive Design**: Perfectamente funcional en dispositivos móviles, tabletas y desktop
-- 🔍 **Búsqueda Avanzada**: Busca películas por título, director, actor o género
-- 📊 **Base de Datos Relacional**: Modelo completo de películas, personas, géneros y reseñas
+- **Galería de Películas**: Navega por el catálogo completo con filtros de búsqueda y géneros
+- **Autenticación Segura**: Sistema de inicio de sesión y registro de usuarios
+- **Roles de Usuario**: Control de acceso diferenciado entre ADMIN y USER
+- **Reseñas y Calificaciones**: Los usuarios pueden dejar reseñas y calificar películas
+- **Listas Personalizadas**: "Vistas" (películas vistas) y "Watchlist" (para ver después)
+- **Modo Oscuro/Claro**: Interfaz adaptable con tema personalizable
+- **Responsive Design**: Perfectamente funcional en dispositivos móviles, tabletas y desktop
+- **Búsqueda Avanzada**: Busca películas por título, director, actor o género
+- **Base de Datos Relacional**: Modelo completo de películas, personas, géneros y reseñas
 
 ---
 
-## 👥 Roles y Permisos
+## Roles y Permisos
 
 ### Rol: ADMIN
 Los administradores tienen acceso completo a todas las funcionalidades:
-- ✅ Ver y gestionar el catálogo completo de películas
-- ✅ Registrar nuevas películas
-- ✅ Ver y administrar la estructura de la base de datos
-- ✅ Eliminar reseñas de usuarios
-- ✅ Acceso a todos los módulos de la aplicación
-- ✅ Ver la galería de películas y detalles individuales
+- Ver y gestionar el catálogo completo de películas
+- Registrar nuevas películas
+- Ver y administrar la estructura de la base de datos
+- Eliminar reseñas de usuarios
+- Acceso a todos los módulos de la aplicación
+- Ver la galería de películas y detalles individuales
 
 ### Rol: USER
 Los usuarios estándar tienen acceso a funcionalidades de consulta y gestión personal:
-- ✅ Ver la galería y detalles de películas
-- ✅ Buscar y filtrar películas
-- ✅ Dejar reseñas y calificaciones
-- ✅ Marcar películas como "Vistas"
-- ✅ Agregar películas a la "Watchlist"
-- ✅ Ver sus listas personalizadas
-- ❌ No pueden registrar nuevas películas
-- ❌ No pueden acceder a la sección "Base de Datos"
-- ❌ No pueden eliminar reseñas de otros usuarios
+- Ver la galería y detalles de películas
+- Buscar y filtrar películas
+- Dejar reseñas y calificaciones
+- Marcar películas como "Vistas"
+- Agregar películas a la "Watchlist"
+- Ver sus listas personalizadas
+- No pueden registrar nuevas películas
+- No pueden acceder a la sección "Base de Datos"
+- No pueden eliminar reseñas de otros usuarios
 
 ### Visitante (No autenticado)
 Los usuarios no autenticados solo pueden:
-- ✅ Ver la página de inicio
-- ✅ Ver la sección "Quiénes Somos"
-- ✅ Acceder a la página de inicio de sesión y registro
-- ❌ No pueden acceder a la galería ni a otras secciones protegidas
+- Ver la página de inicio
+- Ver la sección "Quiénes Somos"
+- Acceder a la página de inicio de sesión y registro
+- No pueden acceder a la galería ni a otras secciones protegidas
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 movies/
@@ -135,7 +135,7 @@ movies/
 
 ---
 
-## 📦 Paso a Paso de Instalación
+## Paso a Paso de Instalación
 
 ### 1. Requisitos Previos
 
@@ -198,7 +198,7 @@ NODE_ENV="development"
 
 ---
 
-## 🗄️ Configuración de la Base de Datos
+## Configuración de la Base de Datos
 
 ### Opción A: Usar PostgreSQL Local
 
@@ -260,7 +260,7 @@ Esto abrirá una interfaz web en `http://localhost:5555` donde podrás ver y edi
 
 ---
 
-## 🚀 Ejecución del Proyecto
+## Ejecución del Proyecto
 
 ### Entorno de Desarrollo
 
@@ -290,23 +290,23 @@ npm start
 
 ---
 
-## 📱 Módulos y Funcionalidades
+## Módulos y Funcionalidades
 
-### 1. 📍 Página de Inicio (`/`)
+### 1. Página de Inicio (`/`)
 - Carrusel de películas destacadas
 - Descripción del proyecto y bienvenida
 - Resumen de los módulos del sistema
 - Vista de las tablas de la base de datos
 - Formulario de contacto
 
-### 2. 🎥 Galería de Películas (`/galeria`)
+### 2. Galería de Películas (`/galeria`)
 - Cuadrícula de películas con pósters
 - Buscador por título, director, actor o género
 - Filtro por géneros
 - Paginación del catálogo
 - Vista de detalle de cada película (`/galeria/[id]`)
 
-### 3. 📋 Detalle de Película (`/galeria/[id]`)
+### 3. Detalle de Película (`/galeria/[id]`)
 - Póster grande de la película
 - Información completa (título, año, duración, rating IMDb)
 - Sinopsis
@@ -316,13 +316,13 @@ npm start
 - Botones para agregar a "Vistas" o "Watchlist" (solo USER)
 - Formulario para dejar reseñas (solo USER)
 
-### 4. 🔐 Inicio de Sesión / Registro (`/login`)
+### 4. Inicio de Sesión / Registro (`/login`)
 - Formulario de inicio de sesión
 - Formulario de registro de nuevos usuarios
 - Validación de campos
 - Manejo de errores
 
-### 5. 🎬 Registrar Película (`/registrar-pelicula`) (Solo ADMIN)
+### 5. Registrar Película (`/registrar-pelicula`) (Solo ADMIN)
 - Formulario completo para agregar nuevas películas
 - Campos: Título, año, duración, rating IMDb, sinopsis, URL del póster
 - Selección de géneros (múltiples)
@@ -330,35 +330,35 @@ npm start
 - Vista previa del póster
 - Validación de campos obligatorios
 
-### 6. 📊 Base de Datos (`/base-de-datos`) (Solo ADMIN)
+### 6. Base de Datos (`/base-de-datos`) (Solo ADMIN)
 - Visualización de la estructura de todas las tablas
 - Descripción de cada campo
 - Ejemplos de registros
 - Diagrama ER (si está disponible)
 - Índice de navegación entre tablas
 
-### 7. 👁️ Vistas (`/vistas`) (Solo USER)
+### 7. Vistas (`/vistas`) (Solo USER)
 - Lista de películas marcadas como "vistas" por el usuario
 - Visualización similar a la galería
 - Posibilidad de quitar películas de la lista
 
-### 8. 📚 Watchlist (`/watchlist`) (Solo USER)
+### 8. Watchlist (`/watchlist`) (Solo USER)
 - Lista de películas que el usuario quiere ver
 - Visualización similar a la galería
 - Posibilidad de quitar películas de la lista
 
-### 9. 🔍 Consultas (`/consultas`)
+### 9. Consultas (`/consultas`)
 - Buscador de películas
 - Reproductor de tráiler de ejemplo (Interstellar)
 
-### 10. 👥 Quiénes Somos (`/quienes-somos`)
+### 10. Quiénes Somos (`/quienes-somos`)
 - Información sobre el equipo de desarrollo
 - Misión y visión del proyecto
 - Detalles académicos (si aplica)
 
 ---
 
-## 🗃️ Base de Datos (Modelo Relacional)
+## Base de Datos (Modelo Relacional)
 
 El modelo de base de datos de MOVIX está compuesto por las siguientes tablas:
 
@@ -417,7 +417,7 @@ El modelo de base de datos de MOVIX está compuesto por las siguientes tablas:
 
 ---
 
-## 🤝 Contribuciones
+## Contribuciones
 
 Si deseas contribuir al proyecto, por favor:
 1. Haz un fork del repositorio
@@ -428,13 +428,13 @@ Si deseas contribuir al proyecto, por favor:
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo la Licencia MIT.
 
 ---
 
-## 👨‍💻 Equipo de Desarrollo
+## Equipo de Desarrollo
 
 Desarrollado como proyecto académico por:
 - Sofia Restrepo
@@ -443,10 +443,10 @@ Desarrollado como proyecto académico por:
 
 ---
 
-## 📧 Contacto
+## Contacto
 
 Si tienes preguntas o sugerencias sobre el proyecto, no dudes en contactarnos.
 
 ---
 
-**¡Gracias por usar MOVIX! 🎬✨**
+**¡Gracias por usar MOVIX!**
