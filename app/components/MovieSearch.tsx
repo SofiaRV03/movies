@@ -94,7 +94,7 @@ export default function MovieSearch() {
                 </span>
                 <span className="movie-detail-badge" style={{ background: "rgba(245,197,24,0.15)", borderColor: "#f5c518" }}>
                   <i className="bi bi-star-fill me-1" style={{ color: "#f5c518" }} />
-                  {result.imdb_rating}
+                  {(result.imdb_rating / 10).toFixed(1)}
                 </span>
               </div>
               {result.genres.length > 0 && (

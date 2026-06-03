@@ -47,7 +47,7 @@
     "title": "The Dark Knight",
     "year": 2008,
     "runtime_min": 152,
-    "imdb_rating": 9,
+    "imdb_rating": 90,
     "overview": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -70,7 +70,7 @@
     "title": "The Godfather: Part II",
     "year": 1974,
     "runtime_min": 202,
-    "imdb_rating": 9,
+    "imdb_rating": 90,
     "overview": "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY98_CR1,0,67,98_AL_.jpg",
     "genres": [
@@ -92,7 +92,7 @@
     "title": "12 Angry Men",
     "year": 1957,
     "runtime_min": 96,
-    "imdb_rating": 9,
+    "imdb_rating": 90,
     "overview": "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMWU4N2FjNzYtNTVkNC00NzQ0LTg0MjAtYTJlMjFhNGUxZDFmXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7246,7 +7246,7 @@
     "title": "Badhaai ho",
     "year": 2018,
     "runtime_min": 124,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A man is embarrassed when he finds out his mother is pregnant.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNjZlMDdmN2YtYThmZi00NGQzLTk0ZTQtNTUyZDFmODExOGNiXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY98_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7268,7 +7268,7 @@
     "title": "Togo",
     "year": 2019,
     "runtime_min": 113,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "The story of Togo, the sled dog who led the 1925 serum run yet was considered by most to be too small and weak to lead such an intense race.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNjJkYTc5N2UtMGRlMC00M2FmLTk0ZWMtOTYxNDUwNjI2YzljXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7291,7 +7291,7 @@
     "title": "Airlift",
     "year": 2016,
     "runtime_min": 130,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "When Iraq invades Kuwait in August 1990, a callous Indian businessman becomes the spokesperson for more than 170,000 stranded countrymen.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMGE1ZTkyOTMtMTdiZS00YzI2LTlmYWQtOTE5YWY0NWVlNjlmXkEyXkFqcGdeQXVyNjQ3ODkxMjE@._V1_UY98_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7313,7 +7313,7 @@
     "title": "Bajrangi Bhaijaan",
     "year": 2015,
     "runtime_min": 163,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An Indian man with a magnanimous heart takes a young mute Pakistani girl back to her homeland to reunite her with her family.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjE1NjQ5ODc2NV5BMl5BanBnXkFtZTgwOTM5ODIxNjE@._V1_UY98_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7336,7 +7336,7 @@
     "title": "Baby",
     "year": 2015,
     "runtime_min": 159,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An elite counter-intelligence unit learns of a plot, masterminded by a maniacal madman. With the clock ticking, it's up to them to track the terrorists' international tentacles and prevent them from striking at the heart of India.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYTdhNjBjZDctYTlkYy00ZGIxLWFjYTktODk5ZjNlMzI4NjI3XkEyXkFqcGdeQXVyMjY1MjkzMjE@._V1_UY98_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7359,7 +7359,7 @@
     "title": "La La Land",
     "year": 2016,
     "runtime_min": 128,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7382,7 +7382,7 @@
     "title": "Lion",
     "year": 2016,
     "runtime_min": 118,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A five-year-old Indian boy is adopted by an Australian couple after getting lost hundreds of kilometers from home. 25 years later, he sets out to find his lost family.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjA3NjkzNjg2MF5BMl5BanBnXkFtZTgwMDkyMzgzMDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7404,7 +7404,7 @@
     "title": "The Martian",
     "year": 2015,
     "runtime_min": 144,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7427,7 +7427,7 @@
     "title": "Zootopia",
     "year": 2016,
     "runtime_min": 108,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BOTMyMjEyNzIzMV5BMl5BanBnXkFtZTgwNzIyNjU0NzE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7450,7 +7450,7 @@
     "title": "Bãhubali: The Beginning",
     "year": 2015,
     "runtime_min": 159,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "In ancient India, an adventurous and daring man becomes involved in a decades-old feud between two warring peoples.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYWVlMjVhZWYtNWViNC00ODFkLTk1MmItYjU1MDY5ZDdhMTU3XkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7472,7 +7472,7 @@
     "title": "Kaguyahime no monogatari",
     "year": 2013,
     "runtime_min": 137,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Found inside a shining stalk of bamboo by an old bamboo cutter and his wife, a tiny girl grows rapidly into an exquisite young lady. The mysterious young princess enthralls all who encounter her, but ultimately she must confront her fate, the punishment for her crime.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNThmMWMyMWMtOWRiNy00MGY0LTg1OTUtNjYzODg2MjdlZGU5XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY98_CR1,0,67,98_AL_.jpg",
     "genres": [
@@ -7495,7 +7495,7 @@
     "title": "Wonder",
     "year": 2017,
     "runtime_min": 113,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Based on the New York Times bestseller, this movie tells the incredibly inspiring and heartwarming story of August Pullman, a boy with facial differences who enters the fifth grade, attending a mainstream elementary school for the first time.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYjFhOWY0OTgtNDkzMC00YWJkLTk1NGEtYWUxNjhmMmQ5ZjYyXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7517,7 +7517,7 @@
     "title": "Gully Boy",
     "year": 2019,
     "runtime_min": 154,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A coming-of-age story based on the lives of street rappers in Mumbai.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZDkzMTQ1YTMtMWY4Ny00MzExLTkzYzEtNzZhOTczNzU2NTU1XkEyXkFqcGdeQXVyODY3NjMyMDU@._V1_UY98_CR4,0,67,98_AL_.jpg",
     "genres": [
@@ -7540,7 +7540,7 @@
     "title": "Special Chabbis",
     "year": 2013,
     "runtime_min": 144,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A gang of con-men rob prominent rich businessmen and politicians by posing as C.B.I and income tax officers.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTQ1NDI5MjMzNF5BMl5BanBnXkFtZTcwMTc0MDQwOQ@@._V1_UY98_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7563,7 +7563,7 @@
     "title": "Short Term 12",
     "year": 2013,
     "runtime_min": 96,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A 20-something supervising staff member of a residential treatment facility navigates the troubled waters of that world alongside her co-worker and longtime boyfriend.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTEwNjE2OTM4NDZeQTJeQWpwZ15BbWU3MDE2MTE4OTk@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7584,7 +7584,7 @@
     "title": "Serbuan maut 2: Berandal",
     "year": 2014,
     "runtime_min": 150,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Only a short time after the first raid, Rama goes undercover with the thugs of Jakarta and plans to bring down the syndicate and uncover the corruption within his police force.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTg5MTE2NjA4OV5BMl5BanBnXkFtZTgwMTUyMjczMTE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7607,7 +7607,7 @@
     "title": "The Imitation Game",
     "year": 2014,
     "runtime_min": 114,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "During World War II, the English mathematical genius Alan Turing tries to crack the German Enigma code with help from fellow mathematicians.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BOTgwMzFiMWYtZDhlNS00ODNkLWJiODAtZDVhNzgyNzJhYjQ4L2ltYWdlXkEyXkFqcGdeQXVyNzEzOTYxNTQ@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7630,7 +7630,7 @@
     "title": "Guardians of the Galaxy",
     "year": 2014,
     "runtime_min": 121,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTAwMjU5OTgxNjZeQTJeQWpwZ15BbWU4MDUxNDYxODEx._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7653,7 +7653,7 @@
     "title": "Blade Runner 2049",
     "year": 2017,
     "runtime_min": 164,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7676,7 +7676,7 @@
     "title": "Her",
     "year": 2013,
     "runtime_min": 126,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjA1Nzk0OTM2OF5BMl5BanBnXkFtZTgwNjU2NjEwMDE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7699,7 +7699,7 @@
     "title": "Bohemian Rhapsody",
     "year": 2018,
     "runtime_min": 134,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "The story of the legendary British rock band Queen and lead singer Freddie Mercury, leading up to their famous performance at Live Aid (1985).",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTA2NDc3Njg5NDVeQTJeQWpwZ15BbWU4MDc1NDcxNTUz._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7722,7 +7722,7 @@
     "title": "The Revenant",
     "year": 2015,
     "runtime_min": 156,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled by a bear and left for dead by members of his own hunting team.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMDE5OWMzM2QtOTU2ZS00NzAyLWI2MDEtOTRlYjIxZGM0OWRjXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7745,7 +7745,7 @@
     "title": "The Perks of Being a Wallflower",
     "year": 2012,
     "runtime_min": 103,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An introvert freshman is taken under the wings of two seniors who welcome him to the real world",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZThjMmQ5YjktMTUyMC00MjljLWJmMTAtOWIzNDIzY2VhNzQ0XkEyXkFqcGdeQXVyMTAyNjg4NjE0._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7767,7 +7767,7 @@
     "title": "Tropa de Elite 2: O Inimigo Agora é Outro",
     "year": 2010,
     "runtime_min": 115,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "After a prison riot, former-Captain Nascimento, now a high ranking security officer in Rio de Janeiro, is swept into a bloody political dispute that involves government officials and paramilitary groups.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjEzMzMxOTUyNV5BMl5BanBnXkFtZTcwNjI3MDc5Ng@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7790,7 +7790,7 @@
     "title": "The King's Speech",
     "year": 2010,
     "runtime_min": 118,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "The story of King George VI, his impromptu ascension to the throne of the British Empire in 1936, and the speech therapist who helped the unsure monarch overcome his stammer.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMzU5MjEwMTg2Nl5BMl5BanBnXkFtZTcwNzM3MTYxNA@@._V1_UY98_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7813,7 +7813,7 @@
     "title": "The Help",
     "year": 2011,
     "runtime_min": 146,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An aspiring author during the civil rights movement of the 1960s decides to write a book detailing the African American maids' point of view on the white families for which they work, and the hardships they go through on a daily basis.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTM5OTMyMjIxOV5BMl5BanBnXkFtZTcwNzU4MjIwNQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7834,7 +7834,7 @@
     "title": "Deadpool",
     "year": 2016,
     "runtime_min": 108,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYzE5MjY1ZDgtMTkyNC00MTMyLThhMjAtZGI5OTE1NzFlZGJjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7857,7 +7857,7 @@
     "title": "Darbareye Elly",
     "year": 2009,
     "runtime_min": 119,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "The mysterious disappearance of a kindergarten teacher during a picnic in the north of Iran is followed by a series of misadventures for her fellow travelers.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTQ0MzQxODQ0MV5BMl5BanBnXkFtZTgwNTQ0NzY4NDE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7879,7 +7879,7 @@
     "title": "Dev.D",
     "year": 2009,
     "runtime_min": 144,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "After breaking up with his childhood sweetheart, a young man finds solace in drugs. Meanwhile, a teenage girl is caught in the world of prostitution. Will they be destroyed, or will they find redemption?",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYjU1NjczNzYtYmFjOC00NzkxLTg4YTUtNGYzMTk3NTU0ZDE3XkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UY98_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7901,7 +7901,7 @@
     "title": "Yip Man",
     "year": 2008,
     "runtime_min": 106,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "During the Japanese invasion of China, a wealthy martial artist is forced to leave his home when his city is occupied. With little means of providing for themselves, Ip Man and the remaining members of the city must find a way to survive.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNTFmMjM3M2UtOTIyZC00Zjk3LTkzODUtYTdhNGRmNzFhYzcyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7924,7 +7924,7 @@
     "title": "My Name Is Khan",
     "year": 2010,
     "runtime_min": 165,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An Indian Muslim man with Asperger's syndrome takes a challenge to speak to the President of the United States seriously and embarks on a cross-country journey.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTUyMTA4NDYzMV5BMl5BanBnXkFtZTcwMjk5MzcxMw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7945,7 +7945,7 @@
     "title": "Nefes: Vatan Sagolsun",
     "year": 2009,
     "runtime_min": 128,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Story of 40-man Turkish task force who must defend a relay station.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjE2NjEyMDg0M15BMl5BanBnXkFtZTcwODYyODg5Mg@@._V1_UY98_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7968,7 +7968,7 @@
     "title": "Slumdog Millionaire",
     "year": 2008,
     "runtime_min": 120,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A Mumbai teenager reflects on his life after being accused of cheating on the Indian version of \"Who Wants to be a Millionaire?\".",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZmNjZWI3NzktYWI1Mi00OTAyLWJkNTYtMzUwYTFlZDA0Y2UwXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -7990,7 +7990,7 @@
     "title": "Black Swan",
     "year": 2010,
     "runtime_min": 108,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A committed dancer struggles to maintain her sanity after winning the lead role in a production of Tchaikovsky's \"Swan Lake\".",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNzY2NzI4OTE5MF5BMl5BanBnXkFtZTcwMjMyNDY4Mw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8012,7 +8012,7 @@
     "title": "Tropa de Elite",
     "year": 2007,
     "runtime_min": 115,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "In 1997 Rio de Janeiro, Captain Nascimento has to find a substitute for his position while trying to take down drug dealers and criminals before the Pope visits.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYmI1ODU5ZjMtNWUyNC00YzllLThjNzktODE1M2E4OTVmY2E5XkEyXkFqcGdeQXVyMTExNzQzMDE0._V1_UY98_CR1,0,67,98_AL_.jpg",
     "genres": [
@@ -8035,7 +8035,7 @@
     "title": "The Avengers",
     "year": 2012,
     "runtime_min": 143,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8058,7 +8058,7 @@
     "title": "Persepolis",
     "year": 2007,
     "runtime_min": 96,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A precocious and outspoken Iranian girl grows up during the Islamic Revolution.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMGRkZThmYzEtYjQxZC00OWEzLThjYjAtYzFkMjY0NGZkZWI4XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8081,7 +8081,7 @@
     "title": "Dallas Buyers Club",
     "year": 2013,
     "runtime_min": 117,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "In 1985 Dallas, electrician and hustler Ron Woodroof works around the system to help AIDS patients get the medication they need after he is diagnosed with the disease.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTYwMTA4MzgyNF5BMl5BanBnXkFtZTgwMjEyMjE0MDE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8103,7 +8103,7 @@
     "title": "The Pursuit of Happyness",
     "year": 2006,
     "runtime_min": 117,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A struggling salesman takes custody of his son as he's poised to begin a life-changing professional career.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTQ5NjQ0NDI3NF5BMl5BanBnXkFtZTcwNDI0MjEzMw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8125,7 +8125,7 @@
     "title": "Blood Diamond",
     "year": 2006,
     "runtime_min": 143,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZDMxOGZhNWYtMzRlYy00Mzk5LWJjMjEtNmQ4NDU4M2QxM2UzXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8148,7 +8148,7 @@
     "title": "The Bourne Ultimatum",
     "year": 2007,
     "runtime_min": 115,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Jason Bourne dodges a ruthless C.I.A. official and his Agents from a new assassination program while searching for the origins of his life as a trained killer.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNGNiNmU2YTMtZmU4OS00MjM0LTlmYWUtMjVlYjAzYjE2N2RjXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8171,7 +8171,7 @@
     "title": "Bin-jip",
     "year": 2004,
     "runtime_min": 88,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A transient young man breaks into empty homes to partake of the vacationing residents' lives for a few days.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTM1ODIwNzM5OV5BMl5BanBnXkFtZTcwNjk5MDkyMQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8194,7 +8194,7 @@
     "title": "Sin City",
     "year": 2005,
     "runtime_min": 124,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A movie that explores the dark and miserable town, Basin City, tells the story of three different people, all caught up in violent corruption.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BODZmYjMwNzEtNzVhNC00ZTRmLTk2M2UtNzE1MTQ2ZDAxNjc2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8216,7 +8216,7 @@
     "title": "Le scaphandre et le papillon",
     "year": 2007,
     "runtime_min": 112,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "The true story of Elle editor Jean-Dominique Bauby who suffers a stroke and has to live with an almost totally paralyzed body; only his left eye isn't paralyzed.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTc3MjkzMDkxN15BMl5BanBnXkFtZTcwODAyMTU1MQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8238,7 +8238,7 @@
     "title": "G.O.R.A.",
     "year": 2004,
     "runtime_min": 127,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A slick young Turk kidnapped by extraterrestrials shows his great « humanitarian spirit » by outwitting the evil commander-in-chief of the planet of G.O.R.A.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjE0MTY2MDI3NV5BMl5BanBnXkFtZTcwNTc1MzEzMQ@@._V1_UY98_CR2,0,67,98_AL_.jpg",
     "genres": [
@@ -8261,7 +8261,7 @@
     "title": "Ratatouille",
     "year": 2007,
     "runtime_min": 111,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTMzODU0NTkxMF5BMl5BanBnXkFtZTcwMjQ4MzMzMw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8284,7 +8284,7 @@
     "title": "Casino Royale",
     "year": 2006,
     "runtime_min": 144,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "After earning 00 status and a licence to kill, Secret Agent James Bond sets out on his first mission as 007. Bond must defeat a private banker funding terrorists in a high-stakes game of poker at Casino Royale, Montenegro.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMDI5ZWJhOWItYTlhOC00YWNhLTlkNzctNDU5YTI1M2E1MWZhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8307,7 +8307,7 @@
     "title": "Kill Bill: Vol. 2",
     "year": 2004,
     "runtime_min": 137,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "The Bride continues her quest of vengeance against her former boss and lover Bill, the reclusive bouncer Budd, and the treacherous, one-eyed Elle.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNmFiYmJmN2QtNWQwMi00MzliLThiOWMtZjQxNGRhZTQ1MjgyXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8330,7 +8330,7 @@
     "title": "Vozvrashchenie",
     "year": 2003,
     "runtime_min": 110,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "In the Russian wilderness, two brothers face a range of new, conflicting emotions when their father - a man they know only through a single photograph - resurfaces.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYmViZTY1OWEtMTQxMy00OGQ5LTgzZjAtYTQzOTYxNjliYTI4XkEyXkFqcGdeQXVyNjkxOTM4ODY@._V1_UY98_CR1,0,67,98_AL_.jpg",
     "genres": [
@@ -8351,7 +8351,7 @@
     "title": "Bom Yeoareum Gaeul Gyeoul Geurigo Bom",
     "year": 2003,
     "runtime_min": 103,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A boy is raised by a Buddhist monk in an isolated floating temple where the years pass like the seasons.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZGYxOTRlM2MtNWRjZS00NDk2LWExM2EtMDFiYTgyMGJkZGYyXkEyXkFqcGdeQXVyMTA1NTM1NDI2._V1_UY98_CR1,0,67,98_AL_.jpg",
     "genres": [
@@ -8373,7 +8373,7 @@
     "title": "Mar adentro",
     "year": 2014,
     "runtime_min": 126,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "The factual story of Spaniard Ramon Sampedro, who fought a thirty-year campaign in favor of euthanasia and his own right to die.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjE0NDk2NjgwMV5BMl5BanBnXkFtZTYwMTgyMzA3._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8395,7 +8395,7 @@
     "title": "Cinderella Man",
     "year": 2005,
     "runtime_min": 144,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "The story of James J. Braddock, a supposedly washed-up boxer who came back to become a champion and an inspiration in the 1930s.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BODEyYmQxZjUtZGQ0NS00ZTAwLTkwOGQtNGY2NzEwMWE0MDc3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8418,7 +8418,7 @@
     "title": "Kal Ho Naa Ho",
     "year": 2003,
     "runtime_min": 186,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Naina, an introverted, perpetually depressed girl's life changes when she meets Aman. But Aman has a secret of his own which changes their lives forever. Embroiled in all this is Rohit, Naina's best friend who conceals his love for her.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYmVjNDIxODAtNWZiZi00ZDBlLWJmOTUtNDNjMGExNTViMzE1XkEyXkFqcGdeQXVyNTE0MDc0NTM@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8441,7 +8441,7 @@
     "title": "Mou gaan dou",
     "year": 2002,
     "runtime_min": 101,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A story between a mole in the police department and an undercover cop. Their objectives are the same: to find out who is the mole, and who is the cop.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BM2U0NTcxOTktN2MwZS00N2Q2LWJlYWItMTg0NWIyMDIxNzU5L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY98_CR1,0,67,98_AL_.jpg",
     "genres": [
@@ -8464,7 +8464,7 @@
     "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
     "year": 2003,
     "runtime_min": 143,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Blacksmith Will Turner teams up with eccentric pirate \"Captain\" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNGYyZGM5MGMtYTY2Ni00M2Y1LWIzNjQtYWUzM2VlNGVhMDNhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8487,7 +8487,7 @@
     "title": "Big Fish",
     "year": 2003,
     "runtime_min": 125,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A frustrated son tries to determine the fact from fiction in his dying father's life.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMmU3NzIyODctYjVhOC00NzBmLTlhNWItMzBlODEwZTlmMjUzXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8510,7 +8510,7 @@
     "title": "The Incredibles",
     "year": 2004,
     "runtime_min": 115,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8533,7 +8533,7 @@
     "title": "Yeopgijeogin geunyeo",
     "year": 2001,
     "runtime_min": 137,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A young man sees a drunk, cute woman standing too close to the tracks at a metro station in Seoul and pulls her back. She ends up getting him into trouble repeatedly after that, starting on the train.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjM2NTYxMTE3OV5BMl5BanBnXkFtZTgwNDgwNjgwMzE@._V1_UY98_CR3,0,67,98_AL_.jpg",
     "genres": [
@@ -8556,7 +8556,7 @@
     "title": "Dogville",
     "year": 2003,
     "runtime_min": 178,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A woman on the run from the mob is reluctantly accepted in a small Colorado community in exchange for labor, but when a search visits the town she finds out that their support has a price.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTkwNTg2MTI1NF5BMl5BanBnXkFtZTcwMDM1MzUyMQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8578,7 +8578,7 @@
     "title": "Vizontele",
     "year": 2001,
     "runtime_min": 110,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Lives of residents in a small Anatolian village change when television is introduced to them",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjA2MzM4NjkyMF5BMl5BanBnXkFtZTYwMTQ2ODc5._V1_UY98_CR2,0,67,98_AL_.jpg",
     "genres": [
@@ -8600,7 +8600,7 @@
     "title": "Donnie Darko",
     "year": 2001,
     "runtime_min": 113,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "After narrowly escaping a bizarre accident, a troubled teenager is plagued by visions of a man in a large rabbit suit who manipulates him to commit a series of crimes.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZjZlZDlkYTktMmU1My00ZDBiLWFlNjEtYTBhNjVhOTM4ZjJjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8623,7 +8623,7 @@
     "title": "Magnolia",
     "year": 1999,
     "runtime_min": 188,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An epic mosaic of interrelated characters in search of love, forgiveness, and meaning in the San Fernando Valley.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZjk3YThkNDktNjZjMS00MTBiLTllNTAtYzkzMTU0N2QwYjJjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8644,7 +8644,7 @@
     "title": "Dancer in the Dark",
     "year": 2000,
     "runtime_min": 140,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An East European girl travels to the United States with her young son, expecting it to be like a Hollywood film.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNDVkYWMxNWEtNjc2MC00OGI5LWI3NmUtYWUwNDQyOTc3YmY5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8667,7 +8667,7 @@
     "title": "The Straight Story",
     "year": 1999,
     "runtime_min": 112,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An old man makes a long journey by lawnmower to mend his relationship with an ill brother.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNmE1MDk4OWEtYjk1NS00MWU2LTk5ZWItYjZhYmRkODRjMDc0XkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8689,7 +8689,7 @@
     "title": "Pâfekuto burû",
     "year": 1997,
     "runtime_min": 81,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A pop singer gives up her career to become an actress, but she slowly goes insane when she starts being stalked by an obsessed fan and what seems to be a ghost of her past.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMmMzOWNhNTYtYmY0My00OGJiLWIzNDUtZWRhNGY0NWFjNzFmXkEyXkFqcGdeQXVyNjUxMDQ0MTg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8712,7 +8712,7 @@
     "title": "Festen",
     "year": 1998,
     "runtime_min": 105,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "At Helge's 60th birthday party, some unpleasant family truths are revealed.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYTg3Yjc4N2QtZDdlNC00NmU2LWFiYjktYjI3NTMwMjk4M2FmXkEyXkFqcGdeQXVyMjgyNjk3MzE@._V1_UY98_CR4,0,67,98_AL_.jpg",
     "genres": [
@@ -8733,7 +8733,7 @@
     "title": "Central do Brasil",
     "year": 1998,
     "runtime_min": 110,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An emotive journey of a former school teacher, who writes letters for illiterate people, and a young boy, whose mother has just died, as they search for the father he never knew.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjE3ZDA5ZmUtYTk1ZS00NmZmLWJhNTItYjIwZjUwN2RjNzIyXkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8754,7 +8754,7 @@
     "title": "The Iron Giant",
     "year": 1999,
     "runtime_min": 86,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A young boy befriends a giant robot from outer space that a paranoid government agent wants to destroy.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjIxNDU2Njk0OV5BMl5BanBnXkFtZTgwODc3Njc3NjE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8777,7 +8777,7 @@
     "title": "Knockin' on Heaven's Door",
     "year": 1997,
     "runtime_min": 87,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Two terminally ill patients escape from a hospital, steal a car and rush towards the sea.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTk2MjcxNjMzN15BMl5BanBnXkFtZTgwMTE3OTEwNjE@._V1_UY98_CR3,0,67,98_AL_.jpg",
     "genres": [
@@ -8800,7 +8800,7 @@
     "title": "Sling Blade",
     "year": 1996,
     "runtime_min": 135,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Karl Childers, a simple man hospitalized since his childhood murder of his mother and her lover, is released to start a new life in a small town.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNGY5NWIxMjAtODBjNC00MmZhLTk1ZTAtNGRhYThlOTNjMTQwXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8821,7 +8821,7 @@
     "title": "Secrets & Lies",
     "year": 1996,
     "runtime_min": 136,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Following the death of her adoptive parents, a successful young black optometrist establishes contact with her biological mother -- a lonely white factory worker living in poverty in East London.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BY2QzMTIxNjItNGQyNy00MjQzLWJiYTItMzIyZjdkYjYyYjRlXkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8843,7 +8843,7 @@
     "title": "Twelve Monkeys",
     "year": 1995,
     "runtime_min": 129,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "In a future world devastated by disease, a convict is sent back in time to gather information about the man-made virus that wiped out most of the human population on the planet.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BN2Y2OWU4MWMtNmIyMy00YzMyLWI0Y2ItMTcyZDc3MTdmZDU4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8866,7 +8866,7 @@
     "title": "Kôkaku Kidôtai",
     "year": 1995,
     "runtime_min": 83,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A cyborg policewoman and her partner hunt a mysterious and powerful hacker called the Puppet Master.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYWRiYjQyOGItNzQ1Mi00MGI1LWE3NjItNTg1ZDQwNjUwNDM2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8889,7 +8889,7 @@
     "title": "The Nightmare Before Christmas",
     "year": 1993,
     "runtime_min": 76,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Jack Skellington, king of Halloween Town, discovers Christmas Town, but his attempts to bring Christmas to his home causes confusion.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNWE4OTNiM2ItMjY4Ni00ZTViLWFiZmEtZGEyNGY2ZmNlMzIyXkEyXkFqcGdeQXVyMDU5NDcxNw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8912,7 +8912,7 @@
     "title": "Groundhog Day",
     "year": 1993,
     "runtime_min": 101,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A weatherman finds himself inexplicably living the same day over and over again.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZWIxNzM5YzQtY2FmMS00Yjc3LWI1ZjUtNGVjMjMzZTIxZTIxXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8935,7 +8935,7 @@
     "title": "Bound by Honor",
     "year": 1993,
     "runtime_min": 180,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Based on the true life experiences of poet Jimmy Santiago Baca, the film focuses on step-brothers Paco and Cruz, and their bi-racial cousin Miklo.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNzZmMjAxNjQtZjQzOS00NjU4LWI0NDktZjlkZTgwNjVmNzU3XkEyXkFqcGdeQXVyNTI4MjkwNjA@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8957,7 +8957,7 @@
     "title": "Scent of a Woman",
     "year": 1992,
     "runtime_min": 156,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A prep school student needing money agrees to \"babysit\" a blind man, but the job is not at all what he anticipated.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZTM3ZjA3NTctZThkYy00ODYyLTk2ZjItZmE0MmZlMTk3YjQwXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -8978,7 +8978,7 @@
     "title": "Aladdin",
     "year": 1992,
     "runtime_min": 90,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A kindhearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BY2Q2NDI1MjUtM2Q5ZS00MTFlLWJiYWEtNTZmNjQ3OGJkZDgxXkEyXkFqcGdeQXVyNTI4MjkwNjA@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9001,7 +9001,7 @@
     "title": "JFK",
     "year": 1991,
     "runtime_min": 189,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "New Orleans District Attorney Jim Garrison discovers there's more to the Kennedy assassination than the official story.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYjYyODExMDctZjgwYy00ZjQwLWI4OWYtOGFlYjA4ZjEzNmY1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9024,7 +9024,7 @@
     "title": "Beauty and the Beast",
     "year": 1991,
     "runtime_min": 84,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A prince cursed to spend his days as a hideous monster sets out to regain his humanity by earning a young woman's love.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMzE5MDM1NDktY2I0OC00YWI5LTk2NzUtYjczNDczOWQxYjM0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9047,7 +9047,7 @@
     "title": "Dances with Wolves",
     "year": 1990,
     "runtime_min": 181,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Lieutenant John Dunbar, assigned to a remote western Civil War outpost, befriends wolves and Indians, making him an intolerable aberration in the military.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTY3OTI5NDczN15BMl5BanBnXkFtZTcwNDA0NDY3Mw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9070,7 +9070,7 @@
     "title": "Do the Right Thing",
     "year": 1989,
     "runtime_min": 120,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "On the hottest day of the year on a street in the Bedford-Stuyvesant section of Brooklyn, everyone's hate and bigotry smolders and builds until it explodes into violence.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BODA2MjU1NTI1MV5BMl5BanBnXkFtZTgwOTU4ODIwMjE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9092,7 +9092,7 @@
     "title": "Rain Man",
     "year": 1988,
     "runtime_min": 133,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Selfish yuppie Charlie Babbitt's father left a fortune to his savant brother Raymond and a pittance to Charlie; they travel cross-country.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMzVjNzI4NzYtMjE4NS00M2IzLWFkOWMtOTYwMWUzN2ZlNGVjL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9113,7 +9113,7 @@
     "title": "Akira",
     "year": 1988,
     "runtime_min": 124,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath who can only be stopped by two teenagers and a group of psychics.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BM2ZiZTk1ODgtMTZkNS00NTYxLWIxZTUtNWExZGYwZTRjODViXkEyXkFqcGdeQXVyMTE2MzA3MDM@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9136,7 +9136,7 @@
     "title": "The Princess Bride",
     "year": 1987,
     "runtime_min": 98,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "While home sick in bed, a young boy's grandfather reads him the story of a farmboy-turned-pirate who encounters numerous obstacles, enemies and allies in his quest to be reunited with his true love.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMGM4M2Q5N2MtNThkZS00NTc1LTk1NTItNWEyZjJjNDRmNDk5XkEyXkFqcGdeQXVyMjA0MDQ0Mjc@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9159,7 +9159,7 @@
     "title": "Der Himmel über Berlin",
     "year": 1987,
     "runtime_min": 128,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An angel tires of overseeing human activity and wishes to become human when he falls in love with a mortal.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMzMxZjUzOGQtOTFlOS00MzliLWJhNTUtOTgyNzYzMWQ2YzhmXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_UY98_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9182,7 +9182,7 @@
     "title": "Au revoir les enfants",
     "year": 1987,
     "runtime_min": 104,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A French boarding school run by priests seems to be a haven from World War II until a new student arrives. He becomes the roommate of the top student in his class. Rivals at first, the roommates form a bond and share a secret.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZmYxOTA5YTEtNDY3Ni00YTE5LWE1MTgtYjc4ZWUxNWY3ZTkxXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9204,7 +9204,7 @@
     "title": "Tenkû no shiro Rapyuta",
     "year": 1986,
     "runtime_min": 125,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNTg0NmI1ZGQtZTUxNC00NTgxLThjMDUtZmRlYmEzM2MwOWYwXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY98_CR1,0,67,98_AL_.jpg",
     "genres": [
@@ -9227,7 +9227,7 @@
     "title": "The Terminator",
     "year": 1984,
     "runtime_min": 107,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYTViNzMxZjEtZGEwNy00MDNiLWIzNGQtZDY2MjQ1OWViZjFmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9249,7 +9249,7 @@
     "title": "Gandhi",
     "year": 1982,
     "runtime_min": 191,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "The life of the lawyer who became the famed leader of the Indian revolts against the British rule through his philosophy of nonviolent protest.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMzJiZDRmOWUtYjE2MS00Mjc1LTg1ZDYtNTQxYWJkZTg1OTM4XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9272,7 +9272,7 @@
     "title": "Kagemusha",
     "year": 1980,
     "runtime_min": 180,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A petty thief with an utter resemblance to a samurai warlord is hired as the lord's double. When the warlord later dies the thief is forced to take up arms in his place.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMzFhNWVmNWItNGM5OC00NjZhLTk3YTQtMjE1ODUyOThlMjNmL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9295,7 +9295,7 @@
     "title": "Being There",
     "year": 1979,
     "runtime_min": 130,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A simpleminded, sheltered gardener becomes an unlikely trusted advisor to a powerful businessman and an insider in Washington politics.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNjAzNzJjYzQtMGFmNS00ZjAzLTkwMjgtMWIzYzFkMzM4Njg3XkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9317,7 +9317,7 @@
     "title": "Annie Hall",
     "year": 1977,
     "runtime_min": 93,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Neurotic New York comedian Alvy Singer falls in love with the ditzy Annie Hall.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZDg1OGQ4YzgtM2Y2NS00NjA3LWFjYTctMDRlMDI3NWE1OTUyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9339,7 +9339,7 @@
     "title": "Jaws",
     "year": 1975,
     "runtime_min": 124,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "When a killer shark unleashes chaos on a beach community, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9361,7 +9361,7 @@
     "title": "Dog Day Afternoon",
     "year": 1975,
     "runtime_min": 125,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Three amateur bank robbers plan to hold up a bank. A nice simple robbery: Walk in, take the money, and run. Unfortunately, the supposedly uncomplicated heist suddenly becomes a bizarre nightmare as everything that could go wrong does.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9384,7 +9384,7 @@
     "title": "Young Frankenstein",
     "year": 1974,
     "runtime_min": 106,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An American grandson of the infamous scientist, struggling to prove that his grandfather was not as insane as people believe, is invited to Transylvania, where he discovers the process that reanimates a dead body.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTEwNjg2MjM2ODFeQTJeQWpwZ15BbWU4MDQ1MDU5OTEx._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9405,7 +9405,7 @@
     "title": "Papillon",
     "year": 1973,
     "runtime_min": 151,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A man befriends a fellow criminal as the two of them begin serving their sentence on a dreadful prison island, which inspires the man to plot his escape.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZGRjZjQ0NzAtYmZlNS00Zjc1LTk1YWItMDY5YzQxMzA4MTAzXkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9428,7 +9428,7 @@
     "title": "The Exorcist",
     "year": 1973,
     "runtime_min": 122,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "When a 12-year-old girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYjhmMGMxZDYtMTkyNy00YWVmLTgyYmUtYTU3ZjcwNTBjN2I1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9449,7 +9449,7 @@
     "title": "Sleuth",
     "year": 1972,
     "runtime_min": 138,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A man who loves games and theater invites his wife's lover to meet him, setting up a battle of wits with potentially deadly results.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BM2EzZmFmMmItODY3Zi00NjdjLWE0MTYtZWQ3MGIyM2M4YjZhXkEyXkFqcGdeQXVyMzg2MzE2OTE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9471,7 +9471,7 @@
     "title": "The Last Picture Show",
     "year": 1971,
     "runtime_min": 118,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "In 1951, a group of high schoolers come of age in a bleak, isolated, atrophied North Texas town that is slowly dying, both culturally and economically.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNmVjNzZkZjQtYmM5ZC00M2I0LWJhNzktNDk3MGU1NWMxMjFjXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9493,7 +9493,7 @@
     "title": "Fiddler on the Roof",
     "year": 1971,
     "runtime_min": 181,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "In prerevolutionary Russia, a Jewish peasant contends with marrying off three of his daughters while growing anti-Semitic sentiment threatens his village.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMWMxNDYzNmUtYjFmNC00MGM2LWFmNzMtODhlMGNkNDg5MjE5XkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9516,7 +9516,7 @@
     "title": "Il conformista",
     "year": 1970,
     "runtime_min": 113,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A weak-willed Italian man becomes a fascist flunky who goes abroad to arrange the assassination of his old teacher, now a political dissident.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BODFlYzU4YTItN2EwYi00ODI3LTkwNTQtMDdkNjM3YjMyMTgyXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UY98_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9537,7 +9537,7 @@
     "title": "Butch Cassidy and the Sundance Kid",
     "year": 1969,
     "runtime_min": 110,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Wyoming, early 1900s. Butch Cassidy and The Sundance Kid are the leaders of a band of outlaws. After a train robbery goes wrong they find themselves on the run with a posse hard on their heels. Their solution - escape to Bolivia.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTkyMTM2NDk5Nl5BMl5BanBnXkFtZTgwNzY1NzEyMDE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9560,7 +9560,7 @@
     "title": "Rosemary's Baby",
     "year": 1968,
     "runtime_min": 137,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A young couple trying for a baby move into a fancy apartment surrounded by peculiar neighbors.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZmEwZGU2NzctYzlmNi00MGJkLWE3N2MtYjBlN2ZhMGJkZTZiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9582,7 +9582,7 @@
     "title": "Planet of the Apes",
     "year": 1968,
     "runtime_min": 112,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An astronaut crew crash-lands on a planet in the distant future where intelligent talking apes are the dominant species, and humans are the oppressed and enslaved.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTg0NjUwMzg5NF5BMl5BanBnXkFtZTgwNDQ0NjcwMTE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9604,7 +9604,7 @@
     "title": "The Graduate",
     "year": 1967,
     "runtime_min": 106,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A disillusioned college graduate finds himself torn between his older lover and her daughter.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTQ0ODc4MDk4Nl5BMl5BanBnXkFtZTcwMTEzNzgzNA@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9627,7 +9627,7 @@
     "title": "Who's Afraid of Virginia Woolf?",
     "year": 1966,
     "runtime_min": 131,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A bitter, aging couple, with the help of alcohol, use their young houseguests to fuel anguish and emotional pain towards each other over the course of a distressing night.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjQ5ODI1MjQtMDc0Zi00OGQ1LWE2NTYtMTg1YTkxM2E5NzFkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9648,7 +9648,7 @@
     "title": "The Sound of Music",
     "year": 1965,
     "runtime_min": 172,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A woman leaves an Austrian convent to become a governess to the children of a Naval officer widower.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BODIxNjhkYjEtYzUyMi00YTNjLWE1YjktNjAyY2I2MWNkNmNmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY98_CR1,0,67,98_AL_.jpg",
     "genres": [
@@ -9671,7 +9671,7 @@
     "title": "Doctor Zhivago",
     "year": 1965,
     "runtime_min": 197,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "The life of a Russian physician and poet who, although married to another, falls in love with a political activist's wife and experiences hardship during World War I and then the October Revolution.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNzdmZTk4MTktZmExNi00OWEwLTgxZDctNTE4NWMwNjc1Nzg2XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9694,7 +9694,7 @@
     "title": "Per un pugno di dollari",
     "year": 1964,
     "runtime_min": 99,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A wandering gunfighter plays two rival families against each other in a town torn apart by greed, pride, and revenge.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYjA1MGVlMGItNzgxMC00OWY4LWI4YjEtNTNmYWIzMGUxOGQzXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UY98_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9717,7 +9717,7 @@
     "title": "8½",
     "year": 1963,
     "runtime_min": 138,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A harried movie director retreats into his memories and fantasies.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTQ4MTA0NjEzMF5BMl5BanBnXkFtZTgwMDg4NDYxMzE@._V1_UY98_CR2,0,67,98_AL_.jpg",
     "genres": [
@@ -9738,7 +9738,7 @@
     "title": "Vivre sa vie: Film en douze tableaux",
     "year": 1962,
     "runtime_min": 80,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Twelve episodic tales in the life of a Parisian woman and her slow descent into prostitution.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNjMyZmI5NmItY2JlMi00NzU3LWI5ZGItZjhkOTE0YjEyN2Q4XkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9759,7 +9759,7 @@
     "title": "The Hustler",
     "year": 1961,
     "runtime_min": 134,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "An up-and-coming pool player plays a long-time champion in a single high-stakes match.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNjhjODI2NTItMGE1ZS00NThiLWE1MmYtOWE3YzcyNzY1MTJlXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9781,7 +9781,7 @@
     "title": "La dolce vita",
     "year": 1960,
     "runtime_min": 174,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A series of stories following a week in the life of a philandering paparazzo journalist living in Rome.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BODQ0NzY5NGEtYTc5NC00Yjg4LTg4Y2QtZjE2MTkyYTNmNmU2L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UY98_CR1,0,67,98_AL_.jpg",
     "genres": [
@@ -9803,7 +9803,7 @@
     "title": "Rio Bravo",
     "year": 1959,
     "runtime_min": 141,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A small-town sheriff in the American West enlists the help of a cripple, a drunk, and a young gunfighter in his efforts to hold in jail the brother of the local bad guy.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZDVhMTk1NjUtYjc0OS00OTE1LTk1NTYtYWMzMDI5OTlmYzU2XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9826,7 +9826,7 @@
     "title": "Anatomy of a Murder",
     "year": 1959,
     "runtime_min": 161,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "In a murder trial, the defendant says he suffered temporary insanity after the victim raped his wife. What is the truth, and will he win his case?",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMzM0MzE2ZTAtZTBjZS00MTk5LTg5OTEtNjNmYmQ5NzU2OTUyXkEyXkFqcGdeQXVyNDY2MTk1ODk@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9849,7 +9849,7 @@
     "title": "Touch of Evil",
     "year": 1958,
     "runtime_min": 95,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A stark, perverse story of murder, kidnapping, and police corruption in a Mexican border town.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BOTA1MjA3M2EtMmJjZS00OWViLTkwMTEtM2E5ZDk0NTAyNGJiXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9872,7 +9872,7 @@
     "title": "Cat on a Hot Tin Roof",
     "year": 1958,
     "runtime_min": 108,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Brick is an alcoholic ex-football player who drinks his days away and resists the affections of his wife. A reunion with his terminal father jogs a host of memories and revelations for both father and son.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMzFhNTMwNDMtZjY3Yy00NzY3LWI1ZWQtZTQxMWJmODVhZWFkXkEyXkFqcGdeQXVyNjQzNDI3NzY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9893,7 +9893,7 @@
     "title": "Sweet Smell of Success",
     "year": 1957,
     "runtime_min": 96,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Powerful but unethical Broadway columnist J.J. Hunsecker coerces unscrupulous press agent Sidney Falco into breaking up his sister's romance with a jazz musician.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMjE5NTU3YWYtOWIxNi00YWZhLTg2NzktYzVjZWY5MDQ4NzVlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9915,7 +9915,7 @@
     "title": "The Killing",
     "year": 1956,
     "runtime_min": 84,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Crook Johnny Clay assembles a five man team to plan and execute a daring race-track robbery.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMDE5ZjAwY2YtOWM5Yi00ZWNlLWE5ODQtYjA4NzA1NGFkZDU5XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9938,7 +9938,7 @@
     "title": "The Night of the Hunter",
     "year": 1955,
     "runtime_min": 92,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A religious fanatic marries a gullible widow whose young children are reluctant to tell him where their real daddy hid the $10,000 he'd stolen in a robbery.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYTNjN2M2MzYtZGEwMi00Mzc5LWEwYTMtODM1ZmRiZjFiNTU0L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -9961,7 +9961,7 @@
     "title": "La Strada",
     "year": 1954,
     "runtime_min": 108,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A care-free girl is sold to a traveling entertainer, consequently enduring physical and emotional pain along the way.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYjUyOGMyMTQtYTM5Yy00MjFiLTk2OGItMWYwMDc2YmM1YzhiXkEyXkFqcGdeQXVyMjA0MzYwMDY@._V1_UY98_CR2,0,67,98_AL_.jpg",
     "genres": [
@@ -9982,7 +9982,7 @@
     "title": "Les diaboliques",
     "year": 1955,
     "runtime_min": 117,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "The wife and mistress of a loathed school principal plan to murder him with what they believe is the perfect alibi.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMGJmNmU5OTAtOTQyYy00MmM3LTk4MzUtMGFiZDYzODdmMmU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY98_CR3,0,67,98_AL_.jpg",
     "genres": [
@@ -10005,7 +10005,7 @@
     "title": "Stalag 17",
     "year": 1953,
     "runtime_min": 120,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "When two escaping American World War II prisoners are killed, the German P.O.W. camp barracks black marketeer, J.J. Sefton, is suspected of being an informer.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNDMyNGU0NjUtNTIxMC00ZmU2LWE0ZGItZTdkNGVlODI2ZDcyL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10028,7 +10028,7 @@
     "title": "Roman Holiday",
     "year": 1953,
     "runtime_min": 118,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A bored and sheltered princess escapes her guardians and falls in love with an American newsman in Rome.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTE2MDM4MTMtZmNkZC00Y2QyLWE0YjUtMTAxZGJmODMxMDM0XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10050,7 +10050,7 @@
     "title": "A Streetcar Named Desire",
     "year": 1951,
     "runtime_min": 122,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Disturbed Blanche DuBois moves in with her sister in New Orleans and is tormented by her brutish brother-in-law while her reality crumbles around her.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNzk2M2Y3MzYtNGMzMi00Y2FjLTkwODQtNmExYWU3ZWY3NzExXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10071,7 +10071,7 @@
     "title": "In a Lonely Place",
     "year": 1950,
     "runtime_min": 94,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A potentially violent screenwriter is a murder suspect until his lovely neighbor clears him. However, she soon starts to have her doubts.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNjRmZjcwZTQtYWY0ZS00ODAwLTg4YTktZDhlZDMwMTM1MGFkXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10094,7 +10094,7 @@
     "title": "Kind Hearts and Coronets",
     "year": 1949,
     "runtime_min": 106,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A distant poor relative of the Duke D'Ascoyne plots to inherit the title by murdering the eight other heirs who stand ahead of him in the line of succession.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZjc1Yzc0ZmItMzU1OS00OWVlLThmYTctMWNlYmFlMjkxMzc0XkEyXkFqcGdeQXVyNTA1NjYyMDk@._V1_UY98_CR32,0,67,98_AL_.jpg",
     "genres": [
@@ -10116,7 +10116,7 @@
     "title": "Rope",
     "year": 1948,
     "runtime_min": 80,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Two men attempt to prove they committed the perfect crime by hosting a dinner party after strangling their former classmate to death.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYWFjMDNlYzItY2VlMS00ZTRkLWJjYTEtYjI5NmFlMGE3MzQ2XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10139,7 +10139,7 @@
     "title": "Out of the Past",
     "year": 1947,
     "runtime_min": 97,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A private eye escapes his past to run a gas station in a small town, but his past catches up with him. Now he must return to the big city world of danger, corruption, double crosses and duplicitous dames.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMDE0MjYxYmMtM2VhMC00MjhiLTg5NjItMDkzZGM5MGVlYjMxL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10162,7 +10162,7 @@
     "title": "Brief Encounter",
     "year": 1945,
     "runtime_min": 86,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Meeting a stranger in a railway station, a woman is tempted to cheat on her husband.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYWQ0MGNjOTYtMWJlNi00YWMxLWFmMzktYjAyNTVkY2U1NWNhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10184,7 +10184,7 @@
     "title": "Laura",
     "year": 1944,
     "runtime_min": 88,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A police detective falls in love with the woman whose murder he is investigating.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYjkxOGM5OTktNTRmZi00MjhlLWE2MDktNzY3NjY3NmRjNDUyXkEyXkFqcGdeQXVyNDY2MTk1ODk@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10207,7 +10207,7 @@
     "title": "The Best Years of Our Lives",
     "year": 1946,
     "runtime_min": 170,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Three World War II veterans return home to small-town America to discover that they and their families have been irreparably changed.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BY2RmNTRjYzctODI4Ni00MzQyLWEyNTAtNjU0N2JkMTNhNjJkXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10230,7 +10230,7 @@
     "title": "Arsenic and Old Lace",
     "year": 1942,
     "runtime_min": 118,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A writer of books on the futility of marriage risks his reputation when he decides to get married. Things get even more complicated when he learns on his wedding day that his beloved maiden aunts are habitual murderers.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZDVlNTBjMjctNjAzNS00ZGJhLTg2NzMtNzIwYTIzYTBiMDkyXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10253,7 +10253,7 @@
     "title": "The Maltese Falcon",
     "year": 1941,
     "runtime_min": 100,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A private detective takes on a case that involves him with three eccentric criminals, a gorgeous liar, and their quest for a priceless statuette.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BZjIwNGM1ZTUtOThjYS00NDdiLTk2ZDYtNGY5YjJkNzliM2JjL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10275,7 +10275,7 @@
     "title": "The Grapes of Wrath",
     "year": 1940,
     "runtime_min": 129,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A poor Midwest family is forced off their land. They travel to California, suffering the misfortunes of the homeless in the Great Depression.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNzJiOGI2MjctYjUyMS00ZjkzLWE2ZmUtOTg4NTZkOTNhZDc1L2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10297,7 +10297,7 @@
     "title": "The Wizard of Oz",
     "year": 1939,
     "runtime_min": 102,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Dorothy Gale is swept away from a farm in Kansas to a magical land of Oz in a tornado and embarks on a quest with her new friends to see the Wizard who can help her return home to Kansas and help her friends as well.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BNjUyMTc4MDExMV5BMl5BanBnXkFtZTgwNDg0NDIwMjE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10320,7 +10320,7 @@
     "title": "La règle du jeu",
     "year": 1939,
     "runtime_min": 110,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A bourgeois life in France at the onset of World War II, as the rich and their poor servants meet up at a French chateau.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYTE4NjYxMGEtZmQxZi00YWVmLWJjZTctYTJmNDFmZGEwNDVhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY98_CR2,0,67,98_AL_.jpg",
     "genres": [
@@ -10342,7 +10342,7 @@
     "title": "The Thin Man",
     "year": 1934,
     "runtime_min": 91,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "Former detective Nick Charles and his wealthy wife Nora investigate a murder case, mostly for the fun of it.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BYmFlOWMwMjAtMDMyMC00N2JjLTllODUtZjY3YWU3NGRkM2I2L2ltYWdlXkEyXkFqcGdeQXVyMjUxODE0MDY@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10365,7 +10365,7 @@
     "title": "All Quiet on the Western Front",
     "year": 1930,
     "runtime_min": 152,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "A German youth eagerly enters World War I, but his enthusiasm wanes as he gets a firsthand view of the horror.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMzg2MWQ4MDEtOGZlNi00MTg0LWIwMjQtYWY5NTQwYmUzMWNmXkEyXkFqcGdeQXVyMzg2MzE2OTE@._V1_UX67_CR0,0,67,98_AL_.jpg",
     "genres": [
@@ -10387,7 +10387,7 @@
     "title": "Bronenosets Potemkin",
     "year": 1925,
     "runtime_min": 75,
-    "imdb_rating": 8,
+    "imdb_rating": 80,
     "overview": "In the midst of the Russian Revolution of 1905, the crew of the battleship Potemkin mutiny against the brutal, tyrannical regime of the vessel's officers. The resulting street demonstration in Odessa brings on a police massacre.",
     "poster_url": "https://m.media-amazon.com/images/M/MV5BMTEyMTQzMjQ0MTJeQTJeQWpwZ15BbWU4MDcyMjg4OTEx._V1_UY98_CR1,0,67,98_AL_.jpg",
     "genres": [
