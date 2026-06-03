@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { icon: "bi-film", label: "Películas", value: 142, suffix: "+" },
-  { icon: "bi-person", label: "Actores", value: 386, suffix: "+" },
-  { icon: "bi-camera-reels", label: "Directores", value: 98, suffix: "" },
-  { icon: "bi-tags", label: "Géneros", value: 19, suffix: "" },
+  { icon: "bi-film", label: "Películas", value: 1000, suffix: "" },
+  { icon: "bi-person", label: "Actores", value: 2000, suffix: "+" },
+  { icon: "bi-camera-reels", label: "Directores", value: 500, suffix: "+" },
+  { icon: "bi-tags", label: "Géneros", value: 21, suffix: "" },
 ];
 
 function Counter({ target, suffix }: { target: number; suffix: string }) {

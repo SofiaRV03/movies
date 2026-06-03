@@ -16,7 +16,7 @@
   --radius: 6px;
   --radius-lg: 12px;
   --transition: 180ms ease;
-  --nav-height: 80px;
+  --nav-height: 60px;
 }
 
 body.light-mode {
@@ -466,6 +466,8 @@ form label {
 form input[type="text"],
 form input[type="search"],
 form input[type="email"],
+form input[type="number"],
+form input[type="url"],
 form select,
 form textarea {
   background: var(--surface-2);
@@ -1348,9 +1350,15 @@ form button[type="submit"]:hover {
 }
 
 .module-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.25rem;
+}
+
+.module-grid > * {
+  width: calc((100% - 2 * 1.25rem) / 3);
+  box-sizing: border-box;
 }
 
 .module-card {
@@ -1619,8 +1627,8 @@ form button[type="submit"]:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .module-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .module-grid > * {
+    width: calc((100% - 1.25rem) / 2);
   }
 
   .welcome-section {

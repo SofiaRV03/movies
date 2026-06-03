@@ -44,7 +44,10 @@ export async function proxy(request: NextRequest) {
     const { payload } = await jwtVerify(token, secret);
     const session = payload as { userId: number; email: string; role: string };
 
-    if (pathname.startsWith('/base-de-datos') && session.role !== 'ADMIN') {
+    if (
+      (pathname.startsWith('/base-de-datos') || pathname.startsWith('/registrar-pelicula') || pathname.startsWith('/editar-pelicula')) &&
+      session.role !== 'ADMIN'
+    ) {
       return NextResponse.redirect(new URL('/', request.url));
     }
 

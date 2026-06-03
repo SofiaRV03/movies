@@ -252,9 +252,56 @@ export default function MovieDetailClient({ movie }: { movie: MovieData }) {
         </div>
 
         <div className="movie-detail-info">
-          <h1 style={{ color: "var(--gold)", marginBottom: "0.5rem" }}>
-            {movie.title}
-          </h1>
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "0.3rem", flexWrap: "wrap" }}>
+            <h1 style={{ color: "var(--gold)", margin: 0 }}>
+              {movie.title}
+            </h1>
+            {user?.role === "ADMIN" && (
+              <div style={{ display: "flex", gap: "0.5rem", marginLeft: "auto" }}>
+                <a
+                  href={`/editar-pelicula/${movie.id}`}
+                  style={{
+                    display: "inline-flex", alignItems: "center", gap: "0.4rem",
+                    padding: "0.4rem 1rem", background: "transparent",
+                    border: "1px solid var(--gold-dim)", borderRadius: "var(--radius)",
+                    color: "var(--gold)", cursor: "pointer",
+                    fontFamily: "var(--font-display)", fontSize: "0.78rem",
+                    letterSpacing: "0.06em", textTransform: "uppercase",
+                    textDecoration: "none", transition: "all 0.3s ease",
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.background = "var(--gold)"; e.currentTarget.style.color = "var(--bg)"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "var(--gold)"; }}
+                >
+                  <i className="bi bi-pencil" /> Editar
+                </a>
+                <button
+                  onClick={async () => {
+                    if (!confirm("¿Eliminar esta película? Esta acción no se puede deshacer.")) return;
+                    try {
+                      const res = await fetch(`/api/movies/${movie.id}`, { method: "DELETE" });
+                      if (!res.ok) throw new Error();
+                      window.location.href = "/galeria";
+                    } catch {
+                      alert("Error al eliminar la película");
+                    }
+                  }}
+                  style={{
+                    display: "inline-flex", alignItems: "center", gap: "0.4rem",
+                    padding: "0.4rem 1rem", background: "transparent",
+                    border: "1px solid rgba(231,76,60,0.3)", borderRadius: "var(--radius)",
+                    color: "#e8736a", cursor: "pointer",
+                    fontFamily: "var(--font-display)", fontSize: "0.78rem",
+                    letterSpacing: "0.06em", textTransform: "uppercase",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(231,76,60,0.1)"; e.currentTarget.style.borderColor = "#e74c3c"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.borderColor = "rgba(231,76,60,0.3)"; }}
+                >
+                  <i className="bi bi-trash" /> Eliminar
+                </button>
+              </div>
+            )}
+          </div>
 
           <div className="movie-detail-meta">
             {movie.year && (

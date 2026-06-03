@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/db';
+import { requireAdmin } from '@/lib/auth';
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
@@ -55,4 +56,63 @@ export async function GET(request: NextRequest) {
     })),
     pagination: { page, limit, total, totalPages: Math.ceil(total / limit) },
   });
+}
+
+export async function POST(request: NextRequest) {
+  await requireAdmin();
+
+  const body = await request.json();
+  const { title, year, runtimeMin, imdbRating, overview, posterUrl, genreIds, directorName, actorNames } = body;
+
+  if (!title?.trim()) {
+    return NextResponse.json({ error: 'El título es obligatorio' }, { status: 400 });
+  }
+
+  const movie = await prisma.movie.create({
+    data: {
+      title: title.trim(),
+      year: year ? parseInt(year, 10) : null,
+      runtimeMin: runtimeMin ? parseInt(runtimeMin, 10) : null,
+      imdbRating: imdbRating ? parseInt(imdbRating, 10) : null,
+      overview: overview?.trim() || null,
+      posterUrl: posterUrl?.trim() || null,
+    },
+  });
+
+  for (const genreId of (genreIds as number[] ?? [])) {
+    await prisma.movieGenre.create({ data: { movieId: movie.id, genreId } });
+  }
+
+  if (directorName?.trim()) {
+    const person = await prisma.person.upsert({
+      where: { name: directorName.trim() },
+      update: { isDirector: true },
+      create: { name: directorName.trim(), isDirector: true },
+    });
+    await prisma.movieDirector.create({ data: { movieId: movie.id, personId: person.id } });
+  }
+
+  if (actorNames?.length) {
+    for (let i = 0; i < actorNames.length; i++) {
+      const name = actorNames[i]?.trim();
+      if (!name) continue;
+      const person = await prisma.person.upsert({
+        where: { name },
+        update: { isActor: true },
+        create: { name, isActor: true },
+      });
+      await prisma.movieCast.create({
+        data: { movieId: movie.id, personId: person.id, billingOrder: i + 1 },
+      });
+    }
+  }
+
+  const created = await prisma.movie.findUnique({
+    where: { id: movie.id },
+    include: {
+      genres: { include: { genre: true } },
+    },
+  });
+
+  return NextResponse.json({ id: created!.id, title: created!.title }, { status: 201 });
 }
